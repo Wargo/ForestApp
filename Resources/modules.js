@@ -7,6 +7,7 @@ module.exports = {
 	main:'ui/main',
 	finca:'ui/finca',
 	gallery:'ui/gallery',
+	gps:'ui/gps',
 	
 	/*
 	 * Styles

@@ -9,34 +9,31 @@ module.exports = function(url, view, loader) {
 	    image:'ui/images/button-play.png',
 	    backgroundImage:'none',
 	    left:10,
-	    width:40,
-	    height:40
+	    width:32,
+	    height:32
 	});
 	
 	var pauseResumeButton = Titanium.UI.createButton({
 	    image:'ui/images/button-pause.png',
 	    backgroundImage:'none',
-	    left:60,
-	    width:40,
-	    height:40,
+	    left:50,
+	    width:32,
+	    height:32,
 	    enabled:false
 	});
 	
-	var duration = audioPlayer.getDuration() - 1;
+	var duration = audioPlayer.getDuration();
 	var playing = Ti.UI.createProgressBar({
 		max:duration,
 		right:20,
-		width:190,
-		value:0
+		width:200,
+		value:0,
+		style:Ti.UI.iPhone.ProgressBarStyle.BAR
 	});
-	
-	var ini = 0;
 	
 	var interval = setInterval(function() {
 		if (audioPlayer.playing) {
-			ini ++;
-			Ti.API.error(playing.value);
-			playing.value = ini / 100;
+			playing.value = audioPlayer.getTime();
 		}
 	}, 10);
 	
@@ -46,13 +43,14 @@ module.exports = function(url, view, loader) {
 	playing.show();
 	
 	playing.addEventListener('singletap', function(e) {
-		alert(e);
+		var secs = e.x * duration / playing.width;
+		audioPlayer.setTime(secs);
+		playing.value = secs;
 	});
 	
 	audioPlayer.addEventListener('complete', function(e) {
 		audioPlayer.stop();
 		pauseResumeButton.enabled = false;
-		ini = 0;
 	    playing.value = 0;
 	});
 	
@@ -60,7 +58,6 @@ module.exports = function(url, view, loader) {
 	    if (audioPlayer.playing || audioPlayer.paused) {
 	        audioPlayer.stop();
 	        pauseResumeButton.enabled = false;
-	        ini = 0;
 	        playing.value = 0;
 	        if (Ti.Platform.name === 'android') { 
 	            audioPlayer.release();

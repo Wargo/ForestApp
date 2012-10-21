@@ -1,6 +1,4 @@
 
-var MyGallery = require(Mods.gallery);
-
 module.exports = function(win, parent) {
 	
 	var view = Ti.UI.createView({
@@ -24,6 +22,9 @@ module.exports = function(win, parent) {
 	
 	var gps = Ti.UI.createButton($$.menuButton);
 	gps.image = 'ui/images/menu/ubicacion_gps.png';
+	if (win._current == 'gps') {
+		gps.enabled = false;
+	}
 	
 	var staticMap = Ti.UI.createButton($$.menuButton);
 	staticMap.image = 'ui/images/menu/mapa_estatico.png';
@@ -59,13 +60,29 @@ module.exports = function(win, parent) {
 	
 	home.addEventListener('click', function() {
 		
-		win.close({left:320});
+		win.close();
+		
+	});
+	
+	gps.addEventListener('click', function() {
+		
+		if (parent) {
+			MyGPS(parent).open();
+			win.close();
+		} else {
+			MyGPS(win).open();
+		}
 		
 	});
 	
 	gallery.addEventListener('click', function() {
 		
-		MyGallery(win).open({left:0});
+		if (parent) {
+			MyGallery(parent).open();
+			win.close();
+		} else {
+			MyGallery(win).open();
+		}
 		
 	});
 	

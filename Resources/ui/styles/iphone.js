@@ -13,8 +13,7 @@ module.exports = {
 	
 	win: {
 		backgroundImage:'ui/images/bg.jpg',
-		width:320,
-		left:320
+		width:320
 	},
 	
 	view: {

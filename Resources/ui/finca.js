@@ -1,4 +1,8 @@
 
+MyGallery = require(Mods.gallery);
+
+MyGPS = require(Mods.gps);
+
 MyMenu = require(Mods.menu);
 
 var MySound = require(Mods.sound);
@@ -7,6 +11,8 @@ module.exports = function() {
 	
 	var win = Ti.UI.createWindow($$.win);
 	win._current = 'home';
+	win.width = 320;
+	win.left = 320;
 	
 	var menu = MyMenu(win);
 	win.add(menu);
