@@ -28,9 +28,15 @@ module.exports = function(win, parent) {
 	
 	var staticMap = Ti.UI.createButton($$.menuButton);
 	staticMap.image = 'ui/images/menu/mapa_estatico.png';
+	if (win._current == 'map') {
+		staticMap.enabled = false;
+	}
 	
 	var guia = Ti.UI.createButton($$.menuButton);
 	guia.image = 'ui/images/menu/guia_entorno.png';
+	if (win._current == 'guia') {
+		guia.enabled = false;
+	}
 	
 	var gallery = Ti.UI.createButton($$.menuButton);
 	gallery.image = 'ui/images/menu/galeria.png';
@@ -40,6 +46,9 @@ module.exports = function(win, parent) {
 	
 	var marco = Ti.UI.createButton($$.menuButton);
 	marco.image = 'ui/images/menu/marco_juridico.png';
+	if (win._current == 'marco') {
+		marco.enabled = false;
+	}
 	
 	view.add(back);
 	view.add(home);
@@ -50,18 +59,14 @@ module.exports = function(win, parent) {
 	view.add(marco);
 	
 	back.addEventListener('click', function() {
-		
 		win.close({left:320});
 		if (parent) {
 			parent.close();
 		}
-		
 	});
 	
 	home.addEventListener('click', function() {
-		
 		win.close();
-		
 	});
 	
 	gps.addEventListener('click', function() {
@@ -75,15 +80,40 @@ module.exports = function(win, parent) {
 		
 	});
 	
+	staticMap.addEventListener('click', function() {
+		if (parent) {
+			MyMap(parent).open();
+			win.close();
+		} else {
+			MyMap(win).open();
+		}
+	});
+	
+	guia.addEventListener('click', function() {
+		if (parent) {
+			MyGuia(parent).open();
+			win.close();
+		} else {
+			MyGuia(win).open();
+		}
+	});
+	
 	gallery.addEventListener('click', function() {
-		
 		if (parent) {
 			MyGallery(parent).open();
 			win.close();
 		} else {
 			MyGallery(win).open();
 		}
-		
+	});
+	
+	marco.addEventListener('click', function() {
+		if (parent) {
+			MyMarco(parent).open();
+			win.close();
+		} else {
+			MyMarco(win).open();
+		}
 	});
 	
 	return view;

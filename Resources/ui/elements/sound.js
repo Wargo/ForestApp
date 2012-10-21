@@ -6,7 +6,7 @@ module.exports = function(url, view, loader) {
 	});
 	
 	var startStopButton = Titanium.UI.createButton({
-	    image:'ui/images/button-play.png',
+	    image:'ui/images/audio/play.png',
 	    backgroundImage:'none',
 	    left:10,
 	    width:32,
@@ -14,7 +14,7 @@ module.exports = function(url, view, loader) {
 	});
 	
 	var pauseResumeButton = Titanium.UI.createButton({
-	    image:'ui/images/button-pause.png',
+	    image:'ui/images/audio/pause.png',
 	    backgroundImage:'none',
 	    left:50,
 	    width:32,
@@ -49,6 +49,7 @@ module.exports = function(url, view, loader) {
 	});
 	
 	audioPlayer.addEventListener('complete', function(e) {
+		startStopButton.image = 'ui/images/audio/play.png';
 		audioPlayer.stop();
 		pauseResumeButton.enabled = false;
 	    playing.value = 0;
@@ -59,28 +60,27 @@ module.exports = function(url, view, loader) {
 	        audioPlayer.stop();
 	        pauseResumeButton.enabled = false;
 	        playing.value = 0;
-	        if (Ti.Platform.name === 'android') { 
-	            audioPlayer.release();
-	        }   
+	        startStopButton.image = 'ui/images/audio/play.png';
 	    } else {
 	        audioPlayer.play();
 	        pauseResumeButton.enabled = true;
+	        startStopButton.image = 'ui/images/audio/stop.png';
 	    }
+	    pauseResumeButton.image = 'ui/images/audio/pause.png';
 	});
 	
 	pauseResumeButton.addEventListener('click', function() {
 	    if (audioPlayer.paused) {
 	        audioPlayer.play();
+	        pauseResumeButton.image = 'ui/images/audio/pause.png';
 	    } else {
 	        audioPlayer.pause();
+	        pauseResumeButton.image = 'ui/images/audio/play.png';
 	    }
 	});
 	
 	view._win.addEventListener('close', function() {
 	    audioPlayer.stop();
-	    if (Ti.Platform.osname === 'android') { 
-	        audioPlayer.release();
-	    }
 	});
 	
 	loader.hide();

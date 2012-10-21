@@ -8,6 +8,9 @@ module.exports = {
 	finca:'ui/finca',
 	gallery:'ui/gallery',
 	gps:'ui/gps',
+	map:'ui/map',
+	marco:'ui/marco',
+	guia:'ui/guia',
 	
 	/*
 	 * Styles
