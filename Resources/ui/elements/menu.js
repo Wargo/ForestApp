@@ -1,0 +1,74 @@
+
+var MyGallery = require(Mods.gallery);
+
+module.exports = function(win, parent) {
+	
+	var view = Ti.UI.createView({
+		backgroundImage:'ui/images/fondo_menu.png',
+		top:0,
+		height:45,
+		layout:'horizontal'
+	});
+	
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	if (!win) {
+		back.enabled = false;
+	}
+	
+	var home = Ti.UI.createButton($$.menuButton);
+	home.image = 'ui/images/menu/inicio_tour.png';
+	if (win._current == 'home') {
+		home.enabled = false;
+	}
+	
+	var gps = Ti.UI.createButton($$.menuButton);
+	gps.image = 'ui/images/menu/ubicacion_gps.png';
+	
+	var staticMap = Ti.UI.createButton($$.menuButton);
+	staticMap.image = 'ui/images/menu/mapa_estatico.png';
+	
+	var guia = Ti.UI.createButton($$.menuButton);
+	guia.image = 'ui/images/menu/guia_entorno.png';
+	
+	var gallery = Ti.UI.createButton($$.menuButton);
+	gallery.image = 'ui/images/menu/galeria.png';
+	if (win._current == 'gallery') {
+		gallery.enabled = false;
+	}
+	
+	var marco = Ti.UI.createButton($$.menuButton);
+	marco.image = 'ui/images/menu/marco_juridico.png';
+	
+	view.add(back);
+	view.add(home);
+	view.add(gps);
+	view.add(staticMap);
+	view.add(guia);
+	view.add(gallery);
+	view.add(marco);
+	
+	back.addEventListener('click', function() {
+		
+		win.close({left:320});
+		if (parent) {
+			parent.close();
+		}
+		
+	});
+	
+	home.addEventListener('click', function() {
+		
+		win.close({left:320});
+		
+	});
+	
+	gallery.addEventListener('click', function() {
+		
+		MyGallery(win).open({left:0});
+		
+	});
+	
+	return view;
+	
+}
