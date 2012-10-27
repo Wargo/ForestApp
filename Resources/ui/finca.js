@@ -1,5 +1,5 @@
 
-MyGallery = require(Mods.gallery);
+MyImages = require(Mods.images);
 MyGPS = require(Mods.gps);
 MyMap = require(Mods.map);
 MyGuia = require(Mods.guia);

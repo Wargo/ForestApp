@@ -100,10 +100,10 @@ module.exports = function(win, parent) {
 	
 	gallery.addEventListener('click', function() {
 		if (parent) {
-			MyGallery(parent).open();
+			MyImages(parent).open();
 			win.close();
 		} else {
-			MyGallery(win).open();
+			MyImages(win).open();
 		}
 	});
 	

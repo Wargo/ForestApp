@@ -6,7 +6,7 @@ module.exports = {
 	 */
 	main:'ui/main',
 	finca:'ui/finca',
-	gallery:'ui/gallery',
+	images:'ui/gallery',
 	gps:'ui/gps',
 	map:'ui/map',
 	marco:'ui/marco',
@@ -23,6 +23,11 @@ module.exports = {
 	 */
 	menu:'ui/elements/menu',
 	sound:'ui/elements/sound',
-	footer:'ui/elements/footer'
+	footer:'ui/elements/footer',
 	
+	/*
+	 * Modules
+	 */
+	crop:'ui/modules/crop',
+	gallery:'ui/modules/gallery'
 }

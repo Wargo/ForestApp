@@ -53,5 +53,6 @@
     </mobileweb>
     <modules>
         <module platform="commonjs" version="2.3.0">ti.cloud</module>
+        <module platform="iphone" version="1.1">ti.imagefactory</module>
     </modules>
 </ti:app>
