@@ -11,6 +11,7 @@ module.exports = {
 	map:'ui/map',
 	marco:'ui/marco',
 	guia:'ui/guia',
+	hito:'ui/hito',
 	
 	/*
 	 * Styles

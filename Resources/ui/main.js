@@ -11,6 +11,7 @@ module.exports = function() {
 	win.add(footer);
 	
 	var view = Ti.UI.createScrollView($$.view);
+	view.top = 10;
 	
 	win.add(view);
 	
