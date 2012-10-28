@@ -17,10 +17,14 @@ module.exports = function() {
 	var menu = MyMenu(win);
 	win.add(menu);
 	
+	var footer = MyFooter();
+	win.add(footer);
+	
 	var scrollView = Ti.UI.createScrollView({
 		contentHeight:'auto',
 		showVerticalScrollIndicator:true,
-		top:45
+		top:45,
+		bottom:19
 	});
 	
 	var hitos = [1, 2, 3, 4, 5, 6, 7, 8];

@@ -11,6 +11,17 @@ module.exports = {
 		font:{fontSize:16, fontFamily:'Georgia', fontWeight:'bold'}
 	},
 	
+	textHeader: {
+		color:'white',
+		font:{fontSize:18, fontFamily:'Georgia'},
+		left:85
+	},
+	
+	textFooter: {
+		color:'white',
+		font:{fontSize:11.5, fontFamily:'Georgia'}
+	},
+	
 	win: {
 		backgroundImage:'ui/images/bg.jpg',
 		width:320

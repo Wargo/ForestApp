@@ -7,8 +7,12 @@ module.exports = function(home) {
 	var menu = MyMenu(win, home);
 	win.add(menu);
 	
+	var footer = MyFooter();
+	win.add(footer);
+	
 	var map = Ti.Map.createView({
 		top:45,
+		bottom:19,
 		userLocation:false,
 		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.02, longitudeDelta:0.02}
 	});

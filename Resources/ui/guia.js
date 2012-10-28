@@ -7,6 +7,9 @@ module.exports = function(home) {
 	var menu = MyMenu(win, home);
 	win.add(menu);
 	
+	var footer = MyFooter();
+	win.add(footer);
+	
 	return win;
 	
 }

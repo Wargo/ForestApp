@@ -11,10 +11,14 @@ module.exports = function(home) {
 	var menu = MyMenu(win, home);
 	win.add(menu);
 	
+	var footer = MyFooter();
+	win.add(footer);
+	
 	var scrollView = Ti.UI.createScrollView({
 		contentHeight:'auto',
 		showVerticalScrollIndicator:true,
-		top:45
+		top:45,
+		bottom:19
 	});
 	
 	var images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];

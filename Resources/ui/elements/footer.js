@@ -7,8 +7,10 @@ module.exports = function() {
 		height:19
 	});
 	
-	view.add(Ti.UI.createLabel($$.text));
-	view.text = 'ForestApp v1.0 2012';
+	var text = Ti.UI.createLabel($$.textFooter);
+	text.text = 'ForestApp v1.0 2012';
+	
+	view.add(text);
 	
 	return view;
 	
