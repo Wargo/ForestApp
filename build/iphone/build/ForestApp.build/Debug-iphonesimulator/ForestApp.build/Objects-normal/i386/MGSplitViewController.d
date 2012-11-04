@@ -42,8 +42,4 @@ dependencies: \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiTab.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiTabGroup.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIWindow.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiViewController.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitViewController.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitDividerView.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitCornersView.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitView.h
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiViewController.h

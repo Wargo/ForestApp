@@ -28,8 +28,4 @@ dependencies: \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBuffer.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBlob.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/LayoutConstraint.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiGradient.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiOSAdViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiRect.h
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiGradient.h

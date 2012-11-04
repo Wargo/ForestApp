@@ -44,21 +44,5 @@ dependencies: \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiTabGroup.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIWindow.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiViewController.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneAnimationStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneStatusBarProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneRowAnimationStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneSystemButtonStyleProxy.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneSystemButtonProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneActivityIndicatorStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneSystemIconProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneScrollIndicatorStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneTableViewStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneTableViewSeparatorStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneTableViewScrollPositionProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneTableViewCellSelectionStyleProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneNavigationGroupProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPadProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPadPopoverProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPadSplitWindowProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPadDocumentViewerProxy.h
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiPhoneProgressBarStyleProxy.h

@@ -15,27 +15,11 @@ dependencies: \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/headers/TiCore/TiContextRefPrivate.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/KrollCallback.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/KrollObject.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiOSAdViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIView.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiAnimation.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiPoint.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiDimension.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiColor.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/ListenerEntry.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiModule.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUtils.h \
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiColor.h \
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiDimension.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/WebFont.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiFile.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBuffer.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBlob.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/LayoutConstraint.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiGradient.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiRect.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/Webcolor.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/Ti3DMatrix.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiOSCoverFlowViewProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiOSToolbarProxy.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiToolbar.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiUIiOSTabbedBarProxy.h
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/Webcolor.h

@@ -1,13 +1,12 @@
 dependencies: \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitView.m \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitView.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/MGSplitView/MGSplitViewController.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBase.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiThreading.h \
-  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiPublicAPI.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiApp.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiHost.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiProxy.h \
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiBase.h \
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiThreading.h \
+  /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiPublicAPI.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/TiEvaluator.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/Classes/KrollContext.h \
   /Users/albertsorianogarcia/Documents/Titanium\ Studio\ Workspace/ForestApp/build/iphone/headers/TiCore/TiCore.h \

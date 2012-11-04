@@ -25,7 +25,7 @@ module.exports = function() {
 	var footer = MyFooter();
 	win.add(footer);
 	
-	var view = Ti.UI.createScrollView($$.view);
+	var view = Ti.UI.createView($$.view);
 	win.add(view);
 	
 	view.add(Ti.UI.createView({height:20})); // Espacio en blanco superior

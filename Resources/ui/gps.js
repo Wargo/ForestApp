@@ -13,7 +13,7 @@ module.exports = function(home) {
 	var map = Ti.Map.createView({
 		top:45,
 		bottom:19,
-		userLocation:false,
+		userLocation:true,
 		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.02, longitudeDelta:0.02}
 	});
 	
@@ -30,7 +30,9 @@ module.exports = function(home) {
 	map.addAnnotation(annotation);
 	
 	annotation.addEventListener('click', function(e) {
+		
 		if (e.clicksource == 'leftButton') {
+			Ti.Platform.openURL('Maps://');
 		} else if (e.clicksource == 'pin') {
 		}
 	});
