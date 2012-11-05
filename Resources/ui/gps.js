@@ -17,25 +17,45 @@ module.exports = function(home) {
 		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.02, longitudeDelta:0.02}
 	});
 	
-	var annotation = Ti.Map.createAnnotation({
-		title:'hola',
-		subtitle:'adios',
-		pincolor:Ti.Map.ANNOTATION_PURPLE,
-		latitude:39.5,
-		longitude:-0.5,
-		animate:true,
-		leftButton:Ti.UI.iPhone.SystemButton.INFO_LIGHT
-	});
+	var hitos = [
+		{title:'Nombre Hito', text:'Descripción breve del hito', lat:39.51, lng:-0.51, image:'ui/images/gallery/imagen_ejemplo1.jpg'},
+		{title:'Nombre Hito', text:'Descripción breve del hito', lat:39.49, lng:-0.50, image:'ui/images/gallery/imagen_ejemplo1.jpg'},
+		{title:'Nombre Hito', text:'Descripción breve del hito', lat:39.50, lng:-0.49, image:'ui/images/gallery/imagen_ejemplo1.jpg'},
+		{title:'Nombre Hito', text:'Descripción breve del hito', lat:39.51, lng:-0.49, image:'ui/images/gallery/imagen_ejemplo1.jpg'},
+		{title:'Nombre Hito', text:'Descripción breve del hito', lat:39.50, lng:-0.50, image:'ui/images/gallery/imagen_ejemplo1.jpg'},
+	];
 	
-	map.addAnnotation(annotation);
-	
-	annotation.addEventListener('click', function(e) {
+	for (i in hitos) {
 		
-		if (e.clicksource == 'leftButton') {
-			Ti.Platform.openURL('Maps://');
-		} else if (e.clicksource == 'pin') {
-		}
-	});
+		var annotation = Ti.Map.createAnnotation({
+			title:hitos[i].title,
+			subtitle:hitos[i].text,
+			pincolor:Ti.Map.ANNOTATION_PURPLE,
+			latitude:hitos[i].lat,
+			longitude:hitos[i].lng,
+			animate:true,
+			leftButton:Ti.UI.iPhone.SystemButton.INFO_LIGHT,
+			rightView:Ti.UI.createImageView({
+				image:hitos[i].image,
+				height:30,
+				width:80
+			})
+		});
+	
+		map.addAnnotation(annotation);
+		
+		annotation.addEventListener('click', function(e) {
+			if (e.clicksource == 'leftButton') {
+				if(parseFloat(Titanium.Platform.version) >= 6) {
+					Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude); //daddr
+				} else {
+					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
+				}
+			} else if (e.clicksource == 'pin') {
+			}
+		});
+		
+	}
 	
 	win.add(map);
 	

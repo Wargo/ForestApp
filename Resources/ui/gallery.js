@@ -21,7 +21,7 @@ module.exports = function(home) {
 		bottom:19
 	});
 	
-	var images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
+	var images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 	
 	var columns = 3;
 	var basicLeft = 10;
@@ -33,36 +33,49 @@ module.exports = function(home) {
 	var rows = 0;
 
 	var arrayImages = [];
+	
+	setTimeout(function() {
+		setData(images);
+	}, 100);
+	
+	function setData(images) {
 
-	for (i in images) {
-		
-		arrayImages.push('ui/images/gallery/imagen_ejemplo1.jpg');
-		
-		if (i % columns === 0) {
-			rows ++;
+		for (i in images) {
+			
+			var loading = Ti.UI.createActivityIndicator();
+			
+			arrayImages.push('ui/images/gallery/imagen_ejemplo1.jpg');
+			
+			if (i % columns === 0) {
+				rows ++;
+			}
+			
+			left = basicLeft + (i % columns) * spaceh;
+			top = basicTop + (rows - 1) * spacev;
+			
+			var image = Ti.UI.createImageView({
+				image:'ui/images/gallery/imagen_ejemplo1.jpg',
+				left:left,
+				top:top,
+				width:width,
+				height:height,
+				_i:i
+			});
+			
+			image.add(loading);
+			loading.show();
+			
+			image = MyCrop(image, image.image, width, null, 5, false, loading);
+			
+			scrollView.add(image);
+			
+			image.addEventListener('singletap', function(e) {
+				
+				MyGallery(arrayImages, e.source._i);
+				
+			});
+			
 		}
-		
-		left = basicLeft + (i % columns) * spaceh;
-		top = basicTop + (rows - 1) * spacev;
-		
-		var image = Ti.UI.createImageView({
-			image:'ui/images/gallery/imagen_ejemplo1.jpg',
-			left:left,
-			top:top,
-			width:width,
-			height:height,
-			_i:i
-		});
-		
-		image = MyCrop(image, image.image, width, null, 5, false);
-		
-		scrollView.add(image);
-		
-		image.addEventListener('click', function(e) {
-			
-			MyGallery(arrayImages, e.source._i);
-			
-		});
 		
 	}
 	

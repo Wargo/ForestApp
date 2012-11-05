@@ -1,7 +1,7 @@
 
 ImageFactory = require('ti.imagefactory');
 
-module.exports = function(image, name, width, height, radius, saveFiles) {
+module.exports = function(image, name, width, height, radius, saveFiles, loading) {
 	
 	var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory + name + '.jpg');
 			
@@ -38,9 +38,11 @@ module.exports = function(image, name, width, height, radius, saveFiles) {
 				e.source._firstLoad = false;
 				e.source._file.write(thumb);
 			} catch(ex) {
+				loading.hide();
 				e.source.animate({opacity:1});
 			}
 		} else {
+			loading.hide();
 			e.source.animate({opacity:1});
 		}
 	});

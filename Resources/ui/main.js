@@ -25,8 +25,18 @@ module.exports = function() {
 	var footer = MyFooter();
 	win.add(footer);
 	
-	var view = Ti.UI.createView($$.view);
-	win.add(view);
+	var tableView = Ti.UI.createTableView($$.view);
+	//tableView.layout = 'auto';
+	tableView.separatorStyle = Ti.UI.iPhone.TableViewSeparatorStyle.NONE;
+	win.add(tableView);
+	
+	var view = Ti.UI.createTableViewRow({
+		layout:'vertical',
+		backgroundColor:'transparent',
+		selectionStyle:Ti.UI.iPhone.TableViewCellSelectionStyle.NONE
+	});
+	
+	tableView.appendRow(view);
 	
 	view.add(Ti.UI.createView({height:20})); // Espacio en blanco superior
 	
