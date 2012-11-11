@@ -1,5 +1,5 @@
 
-module.exports = function(win, parent) {
+module.exports = function(win, parent, current) {
 	
 	var view = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
@@ -100,10 +100,10 @@ module.exports = function(win, parent) {
 	
 	gallery.addEventListener('click', function() {
 		if (parent) {
-			MyImages(parent).open();
+			MyImages(parent, current).open();
 			win.close();
 		} else {
-			MyImages(win).open();
+			MyImages(win, current).open();
 		}
 	});
 	

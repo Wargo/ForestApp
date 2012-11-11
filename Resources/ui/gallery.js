@@ -3,7 +3,7 @@ var MyGallery = require(Mods.gallery);
 
 var MyCrop = require(Mods.crop);
 
-module.exports = function(home) {
+module.exports = function(home, current) {
 	
 	var win = Ti.UI.createWindow($$.win);
 	win._current = 'gallery';
@@ -26,7 +26,7 @@ module.exports = function(home) {
 	});
 	tableView.appendRow(auxRow);
 	
-	var images = data[0].gallery;
+	var images = data[current].gallery;
 	
 	var columns = 3;
 	var basicLeft = 10;

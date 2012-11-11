@@ -14,7 +14,7 @@ module.exports = function(current) {
 	win._current = 'home';
 	win.width = win.left = 320;
 	
-	var menu = MyMenu(win);
+	var menu = MyMenu(win, null, current);
 	win.add(menu);
 	
 	var footer = MyFooter();
