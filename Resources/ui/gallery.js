@@ -14,14 +14,19 @@ module.exports = function(home) {
 	var footer = MyFooter();
 	win.add(footer);
 	
-	var scrollView = Ti.UI.createScrollView({
-		contentHeight:'auto',
-		showVerticalScrollIndicator:true,
+	var tableView = Ti.UI.createTableView({
 		top:45,
-		bottom:19
+		bottom:19,
+		backgroundColor:'transparent',
+		separatorStyle:Ti.UI.iPhone.TableViewSeparatorStyle.NONE
 	});
 	
-	var images = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
+	var auxRow = Ti.UI.createTableViewRow({
+		selectionStyle:Ti.UI.iPhone.TableViewCellSelectionStyle.NONE
+	});
+	tableView.appendRow(auxRow);
+	
+	var images = data[0].gallery;
 	
 	var columns = 3;
 	var basicLeft = 10;
@@ -44,7 +49,7 @@ module.exports = function(home) {
 			
 			var loading = Ti.UI.createActivityIndicator();
 			
-			arrayImages.push('ui/images/gallery/imagen_ejemplo1.jpg');
+			arrayImages.push(images[i].image);
 			
 			if (i % columns === 0) {
 				rows ++;
@@ -54,7 +59,7 @@ module.exports = function(home) {
 			top = basicTop + (rows - 1) * spacev;
 			
 			var image = Ti.UI.createImageView({
-				image:'ui/images/gallery/imagen_ejemplo1.jpg',
+				image:images[i].image,
 				left:left,
 				top:top,
 				width:width,
@@ -67,7 +72,7 @@ module.exports = function(home) {
 			
 			image = MyCrop(image, image.image, width, null, 5, false, loading);
 			
-			scrollView.add(image);
+			auxRow.add(image);
 			
 			image.addEventListener('singletap', function(e) {
 				
@@ -79,7 +84,7 @@ module.exports = function(home) {
 		
 	}
 	
-	win.add(scrollView);
+	win.add(tableView);
 	
 	return win;
 	

@@ -14,7 +14,8 @@ module.exports = function(home) {
 		top:45,
 		bottom:19,
 		userLocation:true,
-		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.02, longitudeDelta:0.02}
+		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.02, longitudeDelta:0.02},
+		mapType:Ti.Map.SATELLITE_TYPE
 	});
 	
 	var hitos = [
@@ -47,10 +48,11 @@ module.exports = function(home) {
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
 				if(parseFloat(Titanium.Platform.version) >= 6) {
-					Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude); //daddr
+					Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				} else {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
+			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
 			} else if (e.clicksource == 'pin') {
 			}
 		});

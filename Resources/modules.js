@@ -29,5 +29,10 @@ module.exports = {
 	 * Modules
 	 */
 	crop:'ui/modules/crop',
-	gallery:'ui/modules/gallery'
+	gallery:'ui/modules/gallery',
+	
+	/*
+	 * BBDD
+	 */
+	data:'data'
 }
