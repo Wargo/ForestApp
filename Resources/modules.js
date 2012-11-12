@@ -12,6 +12,9 @@ module.exports = {
 	marco:'ui/marco',
 	guia:'ui/guia',
 	hito:'ui/hito',
+	home:'ui/home',
+	pois:'ui/pois',
+	poi:'ui/poi',
 	
 	/*
 	 * Styles
@@ -22,6 +25,7 @@ module.exports = {
 	 * Elements
 	 */
 	menu:'ui/elements/menu',
+	minimenu:'ui/elements/minimenu',
 	sound:'ui/elements/sound',
 	footer:'ui/elements/footer',
 	

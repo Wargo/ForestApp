@@ -6,9 +6,12 @@ MyFooter = require(Mods.footer);
 MyData = require(Mods.data);
 data = MyData.bbdd;
 
+var MyPOIS = require(Mods.pois);
+
 module.exports = function() {
 	
 	var win = Ti.UI.createWindow($$.win);
+	win.left = 320;
 	
 	var header = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
@@ -18,16 +21,74 @@ module.exports = function() {
 	var textHeader = Ti.UI.createLabel($$.textHeader);
 	textHeader.text = 'Selecciona una finca:';
 	header.add(textHeader);
+	/*
 	header.add(Ti.UI.createImageView({
 		image:'ui/images/lupa.png',
 		left:45,
 		width:32
 	}));
+	*/
 	win.add(header);
+	var back = Ti.UI.createButton({
+		width:32,
+		height:32,
+		left:5,
+		backgroundImage:'ui/images/menu/inicio_aplicacion.png'
+	});
+	header.add(back);
+	back.addEventListener('click', function() {
+		win.close({left:320});
+	});
 	
 	var footer = MyFooter();
 	win.add(footer);
 	
+	var map = Ti.Map.createView({
+		top:45,
+		bottom:19,
+		userLocation:true,
+		region:{latitude:40, longitude:-3, latitudeDelta:10, longitudeDelta:10},
+		mapType:Ti.Map.SATELLITE_TYPE
+	});
+	
+	for (i in data) {
+	
+		var annotation = Ti.Map.createAnnotation({
+			title:data[i].name,
+			subtitle:data[i].description,
+			pincolor:Ti.Map.ANNOTATION_PURPLE,
+			latitude:data[i].lat,
+			longitude:data[i].lng,
+			animate:true,
+			leftButton:Ti.UI.iPhone.SystemButton.INFO_LIGHT,
+			rightView:Ti.UI.createImageView({
+				image:data[i].image,
+				height:30,
+				width:80
+			}),
+			_i:i
+		});
+	
+		map.addAnnotation(annotation);
+		
+		annotation.addEventListener('click', function(e) {
+			if (e.clicksource == 'leftButton') {
+				if(parseFloat(Titanium.Platform.version) >= 6) {
+					//Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
+				} else {
+					//Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
+				}
+			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
+				new MyPOIS(e.source._i).open({left:0});
+			} else if (e.clicksource == 'pin') {
+			}
+		});
+		
+	}
+	
+	win.add(map);
+	
+	/*
 	var tableView = Ti.UI.createTableView($$.view);
 	tableView.separatorStyle = Ti.UI.iPhone.TableViewSeparatorStyle.NONE;
 	win.add(tableView);
@@ -89,6 +150,7 @@ module.exports = function() {
 		});
 		
 	}
+	*/
 	
 	return win;
 	
