@@ -20,6 +20,7 @@ module.exports = function() {
 	});
 	var textHeader = Ti.UI.createLabel($$.textHeader);
 	textHeader.text = 'Selecciona una finca:';
+	textHeader.left = 'auto';
 	header.add(textHeader);
 	/*
 	header.add(Ti.UI.createImageView({
@@ -29,12 +30,10 @@ module.exports = function() {
 	}));
 	*/
 	win.add(header);
-	var back = Ti.UI.createButton({
-		width:32,
-		height:32,
-		left:5,
-		backgroundImage:'ui/images/menu/inicio_aplicacion.png'
-	});
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
+	
 	header.add(back);
 	back.addEventListener('click', function() {
 		win.close({left:320});

@@ -1,17 +1,22 @@
 
-module.exports = function(home) {
+module.exports = function() {
 	
 	var win = Ti.UI.createWindow($$.win);
+	win.left = 320;
 	
 	var menu = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
 		top:0,
-		height:45,
-		layout:'horizontal'
+		height:45
 	});
+	var textHeader = Ti.UI.createLabel($$.textHeader);
+	textHeader.text = 'Información';
+	textHeader.left = 'auto';
+	menu.add(textHeader);
 	
 	var back = Ti.UI.createButton($$.menuButton);
 	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
 	
 	menu.add(back);
 	
