@@ -12,6 +12,7 @@ module.exports = function(home) {
 	
 	var back = Ti.UI.createButton($$.menuButton);
 	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
 	
 	menu.add(back);
 	

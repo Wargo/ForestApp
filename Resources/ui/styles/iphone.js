@@ -43,7 +43,7 @@ module.exports = {
 	
 	menuButton: {
 		top:5,
-		left:12,
+		left:17,
 		backgroundImage:'none',
 		width:32,
 		height:32

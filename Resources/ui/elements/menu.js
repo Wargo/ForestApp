@@ -1,5 +1,11 @@
 
-module.exports = function(win, parent, current) {
+var current = null;
+
+module.exports = function(win, parent, c) {
+	
+	if (c) {
+		current = c;
+	}
 	
 	var view = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
@@ -52,7 +58,7 @@ module.exports = function(win, parent, current) {
 	
 	view.add(back);
 	view.add(home);
-	view.add(gps);
+	//view.add(gps);
 	view.add(staticMap);
 	view.add(guia);
 	view.add(gallery);
@@ -97,7 +103,7 @@ module.exports = function(win, parent, current) {
 			MyGuia(win).open();
 		}
 	});
-	
+
 	gallery.addEventListener('click', function() {
 		if (parent) {
 			MyImages(parent, current).open();
