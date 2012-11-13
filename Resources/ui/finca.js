@@ -53,9 +53,9 @@ module.exports = function(current) {
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
 				if(parseFloat(Titanium.Platform.version) >= 6) {
-					//Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
+					Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				} else {
-					//Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
+					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
 				MyHito(win, current, e.source._i).open();
