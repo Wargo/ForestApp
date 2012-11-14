@@ -14,7 +14,7 @@ module.exports = {
 	textHeader: {
 		color:'white',
 		font:{fontSize:18, fontFamily:'Georgia'},
-		left:85
+		//left:85
 	},
 	
 	textFooter: {

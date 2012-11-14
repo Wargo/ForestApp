@@ -11,7 +11,6 @@ module.exports = function() {
 	});
 	var textHeader = Ti.UI.createLabel($$.textHeader);
 	textHeader.text = 'Información';
-	textHeader.left = 'auto';
 	menu.add(textHeader);
 	
 	var back = Ti.UI.createButton($$.menuButton);

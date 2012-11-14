@@ -20,7 +20,6 @@ module.exports = function() {
 	});
 	var textHeader = Ti.UI.createLabel($$.textHeader);
 	textHeader.text = 'Selecciona una finca:';
-	textHeader.left = 'auto';
 	header.add(textHeader);
 	/*
 	header.add(Ti.UI.createImageView({

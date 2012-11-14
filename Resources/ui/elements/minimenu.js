@@ -54,7 +54,7 @@ module.exports = function(win, current) {
 	var startButton = Ti.UI.createButton({
 		backgroundImage:'none',
 		right:5,
-		width:140
+		width:125
 	});
 	
 	startButton.add(textHeader);
