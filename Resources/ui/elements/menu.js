@@ -88,10 +88,10 @@ module.exports = function(win, parent, c) {
 	
 	staticMap.addEventListener('click', function() {
 		if (parent) {
-			MyMap(parent).open();
+			MyMap(parent, current).open();
 			win.close();
 		} else {
-			MyMap(win).open();
+			MyMap(win, current).open();
 		}
 	});
 	

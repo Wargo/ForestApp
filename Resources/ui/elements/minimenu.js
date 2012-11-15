@@ -18,7 +18,7 @@ module.exports = function(win, current) {
 	});
 	
 	var info = Ti.UI.createButton($$.menuButton);
-	info.image = 'ui/images/menu/guia_entorno.png';
+	info.image = 'ui/images/menu/inicio_tour.png';
 	info.left = 55;
 	info.enabled = false;
 	view.add(info);

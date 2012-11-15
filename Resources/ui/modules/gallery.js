@@ -49,7 +49,6 @@ module.exports = function(images, pos) {
 			scrollableView.addView(scrollView);
 			
 		}
-
 		
 	}
 	
