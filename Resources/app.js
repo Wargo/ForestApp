@@ -7,7 +7,9 @@
 	
 	var MyWindow = require(Mods.home);
 	
-	new MyWindow().open({left:0});
+	setTimeout(function() {
+		new MyWindow().open({left:0});
+	}, 3000);
 	
 			
 	Ti.App.addEventListener('openURL', function(e){

@@ -11,29 +11,39 @@ module.exports = function(home, current) {
 		maxZoomScale: 10,
 	    minZoomScale: 1,
 	    zoomScale: 1,
-	    top:50,
-	    bottom:19
+	    top:50 + 10,
+	    bottom:19 + 10,
+	    left:10,
+	    right:10,
+	    borderColor:'#CCC',
+	    borderWidth:1,
+	    borderRadius:10,
+	    backgroundColor:'#5000'
 	});
-	
-	var image = Ti.UI.createImageView({
-		image:data[current].staticMap,
-		width:'100%',
-		height:'100%'
-	});
-	
-	scrollView.add(image);
 	
 	win.add(scrollView);
 	
 	var footer = MyFooter();
 	win.add(footer);
 	
+	/*
 	var tr = Ti.UI.create2DMatrix();
 	tr0 = tr.rotate(0);
 	tr1 = tr.rotate(90);
 	tr2 = tr.rotate(180);
 	tr3 = tr.rotate(270);
+	*/
 	
+	var image = Ti.UI.createImageView({
+		image:data[current].staticMap,
+		width:'115%',
+		height:'115%',
+		//transform:tr1
+	});
+	
+	scrollView.add(image);
+	
+	/*
 	Ti.Gesture.addEventListener('orientationchange', function(e) {
 		switch(e.orientation) {
 			case 1:
@@ -50,6 +60,7 @@ module.exports = function(home, current) {
 				break;
 		}		
 	});
+	*/
 	
 	return win;
 	

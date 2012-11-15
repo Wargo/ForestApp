@@ -61,6 +61,27 @@ module.exports = function() {
 		mapType:Ti.Map.SATELLITE_TYPE
 	});
 	
+	var satellite = Ti.UI.createButtonBar({
+		labels:['Satélite', 'Mapa'],
+		bottom:10,
+		right:10,
+		style:Ti.UI.iPhone.SystemButtonStyle.BAR,
+		backgroundColor:'#AB8636'
+	});
+	
+	satellite.addEventListener('click', function(e) {
+		switch (e.index) {
+			case 0:
+				map.mapType = Ti.Map.SATELLITE_TYPE;
+				break;
+			case 1:
+				map.mapType = Ti.Map.TERRAIN_TYPE;
+				break;
+		}
+	});
+	
+	map.add(satellite);
+	
 	for (i in data) {
 	
 		var annotation = Ti.Map.createAnnotation({
