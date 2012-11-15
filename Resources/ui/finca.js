@@ -24,7 +24,7 @@ module.exports = function(current) {
 		top:45,
 		bottom:19,
 		userLocation:true,
-		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.03, longitudeDelta:0.03},
+		region:{latitude:data[current].lat, longitude:data[current].lng, latitudeDelta:0.02, longitudeDelta:0.02},
 		mapType:Ti.Map.SATELLITE_TYPE
 	});
 	

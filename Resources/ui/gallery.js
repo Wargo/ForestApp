@@ -43,11 +43,13 @@ module.exports = function(home, current) {
 		setData(images);
 	}, 100);
 	
+	var loading = Ti.UI.createActivityIndicator();
+	win.add(loading);
+	loading.show();
+	
 	function setData(images) {
 
 		for (i in images) {
-			
-			var loading = Ti.UI.createActivityIndicator();
 			
 			arrayImages.push(images[i].image);
 			
@@ -67,10 +69,7 @@ module.exports = function(home, current) {
 				_i:i
 			});
 			
-			image.add(loading);
-			loading.show();
-			
-			image = MyCrop(image, image.image, width, null, 5, false, loading);
+			image = MyCrop(image, images[i].name, width, height, 5, true);
 			
 			auxRow.add(image);
 			
@@ -81,6 +80,10 @@ module.exports = function(home, current) {
 			});
 			
 		}
+		
+		setTimeout(function() {
+			loading.hide();
+		}, 2000);
 		
 	}
 	

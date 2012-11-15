@@ -1,7 +1,7 @@
 
 ImageFactory = require('ti.imagefactory');
 
-module.exports = function(image, name, width, height, radius, saveFiles, loading) {
+module.exports = function(image, name, width, height, radius, saveFiles) {
 	
 	var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory + name + '.jpg');
 			
@@ -10,16 +10,16 @@ module.exports = function(image, name, width, height, radius, saveFiles, loading
 	}
 	
 	if (saveFiles && file.exists()) {
-		image.opacity = 0;
 		image.image = file;
-		image.borderRadius = radius;
 		image._firstLoad = false;
 	} else {
-		image.opacity = 0;
-		image.borderRadius = 10;
 		image._firstLoad = true;
 		image._file = file;
 	}
+	image.opacity = 0;
+	image.borderRadius = radius;
+	image.borderWidth = 1;
+	image.borderColor = '#FFF';
 	
 	image.addEventListener('load', function(e) {
 		if (e.source._firstLoad) {
@@ -38,11 +38,9 @@ module.exports = function(image, name, width, height, radius, saveFiles, loading
 				e.source._firstLoad = false;
 				e.source._file.write(thumb);
 			} catch(ex) {
-				loading.hide();
 				e.source.animate({opacity:1});
 			}
 		} else {
-			loading.hide();
 			e.source.animate({opacity:1});
 		}
 	});
