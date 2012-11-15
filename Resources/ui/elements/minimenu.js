@@ -27,6 +27,7 @@ module.exports = function(win, current) {
 		tableView.opacity = 1;
 		info.enabled = false;
 		mapButton.enabled = true;
+		win.remove(headerText);
 	});
 	
 	var mapButton = Ti.UI.createButton($$.menuButton);
@@ -38,6 +39,7 @@ module.exports = function(win, current) {
 		map.opacity = 1;
 		info.enabled = true;
 		mapButton.enabled = false;
+		win.add(headerText);
 	});
 	
 	var start = Ti.UI.createImageView({

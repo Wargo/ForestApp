@@ -8,9 +8,21 @@ module.exports = function(current) {
 	var win = Ti.UI.createWindow($$.win);
 	win.left = 320;
 	
+	headerText = Ti.UI.createLabel($$.textTitle);
+	headerText.top = 55;
+	headerText.left = 10;
+	headerText.right = 10;
+	headerText.textAlign = 'center';
+	headerText.text = 'Selecciona el punto de interés y accede a él pinchando en su nombre';
+	
 	map = Ti.Map.createView({
-		top:45,
-		bottom:19,
+		top:45 + 60,
+		bottom:19 + 10,
+		left:10,
+		right:10,
+		borderColor:'#CCC',
+		borderWidth:1,
+		borderRadius:10,
 		userLocation:true,
 		region:{latitude:data[current].poisCenterLat, longitude:data[current].poisCenterLng, latitudeDelta:data[current].zoom, longitudeDelta:data[current].zoom},
 		mapType:Ti.Map.SATELLITE_TYPE,

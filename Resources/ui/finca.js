@@ -20,9 +20,21 @@ module.exports = function(current) {
 	var footer = MyFooter();
 	win.add(footer);
 	
+	var headerText = Ti.UI.createLabel($$.textTitle);
+	headerText.top = 55;
+	headerText.textAlign = 'center';
+	headerText.text = 'Selecciona el hito y pincha en su nombre para acceder a él';
+	
+	win.add(headerText);
+	
 	var map = Ti.Map.createView({
-		top:45,
-		bottom:19,
+		top:45 + 60,
+		bottom:19 + 10,
+		left:10,
+		right:10,
+		borderColor:'#CCC',
+		borderWidth:1,
+		borderRadius:10,
 		userLocation:true,
 		region:{latitude:data[current].lat, longitude:data[current].lng, latitudeDelta:0.02, longitudeDelta:0.02},
 		mapType:Ti.Map.SATELLITE_TYPE

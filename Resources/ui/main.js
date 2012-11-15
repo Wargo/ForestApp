@@ -41,9 +41,21 @@ module.exports = function() {
 	var footer = MyFooter();
 	win.add(footer);
 	
+	var headerText = Ti.UI.createLabel($$.textTitle);
+	headerText.top = 55;
+	headerText.textAlign = 'center';
+	headerText.text = 'Selecciona la finca y accede a ella pinchando en su nombre';
+	
+	win.add(headerText);
+	
 	var map = Ti.Map.createView({
-		top:45,
-		bottom:19,
+		top:45 + 60,
+		bottom:19 + 10,
+		left:10,
+		right:10,
+		borderColor:'#CCC',
+		borderWidth:1,
+		borderRadius:10,
 		userLocation:true,
 		region:{latitude:40, longitude:-3, latitudeDelta:10, longitudeDelta:10},
 		mapType:Ti.Map.SATELLITE_TYPE

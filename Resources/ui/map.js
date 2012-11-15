@@ -11,7 +11,7 @@ module.exports = function(home, current) {
 		maxZoomScale: 10,
 	    minZoomScale: 1,
 	    zoomScale: 1,
-	    top:55,
+	    top:50,
 	    bottom:19
 	});
 	
