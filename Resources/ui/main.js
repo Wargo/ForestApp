@@ -54,7 +54,7 @@ module.exports = function() {
 		var annotation = Ti.Map.createAnnotation({
 			title:data[i].name,
 			subtitle:data[i].description,
-			pincolor:Ti.Map.ANNOTATION_PURPLE,
+			pincolor:Ti.Map.ANNOTATION_GREEN,
 			latitude:data[i].lat,
 			longitude:data[i].lng,
 			animate:true,

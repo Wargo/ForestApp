@@ -76,11 +76,11 @@ module.exports = function(current) {
 		var annotation = Ti.Map.createAnnotation({
 			title:hitos[i].title,
 			subtitle:hitos[i].text,
-			pincolor:Ti.Map.ANNOTATION_PURPLE,
+			pincolor:Ti.Map.ANNOTATION_RED,
 			latitude:hitos[i].lat,
 			longitude:hitos[i].lng,
 			animate:true,
-			leftButton:Ti.UI.iPhone.SystemButton.INFO_LIGHT,
+			//leftButton:Ti.UI.iPhone.SystemButton.INFO_LIGHT,
 			rightView:Ti.UI.createImageView({
 				image:hitos[i].image,
 				height:30,
@@ -93,11 +93,13 @@ module.exports = function(current) {
 		
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
+				/*
 				if(parseFloat(Titanium.Platform.version) >= 6) {
 					Ti.Platform.openURL('Maps://http://maps.apple.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				} else {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
+				*/
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
 				MyPOI(current, e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
