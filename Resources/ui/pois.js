@@ -12,7 +12,7 @@ module.exports = function(current) {
 		top:45,
 		bottom:19,
 		userLocation:true,
-		region:{latitude:39.5, longitude:-0.5, latitudeDelta:0.03, longitudeDelta:0.03},
+		region:{latitude:data[current].poisCenterLat, longitude:data[current].poisCenterLng, latitudeDelta:data[current].zoom, longitudeDelta:data[current].zoom},
 		mapType:Ti.Map.SATELLITE_TYPE,
 		opacity:0
 	});
@@ -22,29 +22,44 @@ module.exports = function(current) {
 	
 	var auxRow = Ti.UI.createTableViewRow({
 		selectionStyle:Ti.UI.iPhone.TableViewCellSelectionStyle.NONE,
-		backgroundColor:'transparent'
+		backgroundColor:'transparent',
+		layout:'vertical'
 	});
 	
 	tableView.appendRow(auxRow);
 	
-	data.title = 'Título...';
-	data.texto1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper aliquet ultrices. Duis pulvinar arcu augue. Ut eu dolor ante, sit amet auctor mi.';
-	data.texto2 = 'Suspendisse bibendum, urna at sollicitudin feugiat, risus mi dapibus nisi, eget consequat sem nisl id ante. Praesent urna neque, suscipit eu auctor nec, aliquam ut sem. Aliquam vel dapibus dui.';
-	data.texto3 = 'Suspendisse molestie bibendum urna in aliquam. Sed vulputate ipsum sed erat vulputate semper. Nunc suscipit cursus magna, a facilisis nunc condimentum quis.';
-	data.texto4 = 'Curabitur lobortis, justo ac fermentum adipiscing, lectus mauris viverra nunc, vel facilisis dolor leo ac arcu. Mauris congue euismod augue, sed congue mauris ultricies eu.';
-	
 	var title = Ti.UI.createLabel($$.textTitle);
-	title.text = data.title;
+	title.text = data[current].poisTitle;
 	title.top = 10;
 	
+	var image = Ti.UI.createImageView({
+		image:data[current].poisImage,
+		left:10,
+		right:10,
+		top:10,
+		width:280,
+		height:210,
+		borderColor:'#FFF',
+		borderWidth:1
+	});
+	
 	var text = Ti.UI.createLabel($$.text);
-	text.text = data.texto1 + '\r\r' + data.texto1 + '\r\r' + data.texto2 + '\r\r' + data.texto3 + '\r\r' + data.texto4;
-	text.top = 30;
+	text.text = data[current].poisText;
+	text.top = 10;
 	text.left = 20;
 	text.right = 20;
 	
+	var firma = Ti.UI.createLabel($$.text);
+	firma.text = data[current].poisFirma;
+	firma.top = 20;
+	firma.left = 20;
+	firma.right = 20;
+	firma.textAlign = 'center';
+	
 	auxRow.add(title);
+	auxRow.add(image);
 	auxRow.add(text);
+	auxRow.add(firma);
 	
 	win.add(tableView);
 	
@@ -84,7 +99,7 @@ module.exports = function(current) {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
-				MyPOI(win, current, e.source._i).open({left:0});
+				MyPOI(current, e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
 			}
 		});
