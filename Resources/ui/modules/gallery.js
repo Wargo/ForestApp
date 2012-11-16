@@ -19,6 +19,10 @@ module.exports = function(images, pos) {
 		setImages();
 	}, 200);
 	
+	var loading = Ti.UI.createActivityIndicator();
+	win.add(loading);
+	loading.show();
+	
 	function setImages() {
 		
 		for (i in images) {
@@ -28,10 +32,6 @@ module.exports = function(images, pos) {
 			    minZoomScale: 1,
 			    zoomScale: 1
 			});
-			
-			var loading = Ti.UI.createActivityIndicator();
-			scrollView.add(loading);
-			loading.show();
 			
 			var image = Ti.UI.createImageView({
 				image:images[i],
@@ -50,12 +50,11 @@ module.exports = function(images, pos) {
 			
 		}
 		
+		scrollableView.currentPage = pos;
+		win.add(scrollableView);
+		
 	}
 	
-	scrollableView.currentPage = pos;
-	
-	win.add(scrollableView);
-		
 	win.open({opacity:1});
 	
 }
