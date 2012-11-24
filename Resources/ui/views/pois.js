@@ -52,7 +52,7 @@ module.exports = function(current) {
 		borderWidth:1,
 		borderRadius:10,
 		userLocation:true,
-		region:{latitude:data[current].poisCenterLat, longitude:data[current].poisCenterLng, latitudeDelta:data[current].zoom, longitudeDelta:data[current].zoom},
+		region:{latitude:data[current].poisCenterLat, longitude:data[current].poisCenterLng, latitudeDelta:data[current].poisZoom, longitudeDelta:data[current].poisZoom},
 		mapType:Ti.Map.SATELLITE_TYPE
 	});
 	
@@ -82,6 +82,8 @@ module.exports = function(current) {
 	
 	var hitos = data[current].pois;
 	
+	var annotations = [];
+	
 	for (i in hitos) {
 	
 		var annotation = Ti.Map.createAnnotation({
@@ -100,7 +102,9 @@ module.exports = function(current) {
 			_i:i
 		});
 	
-		map.addAnnotation(annotation);
+		//map.addAnnotation(annotation);
+		
+		annotations.push(annotation);
 		
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
@@ -120,6 +124,10 @@ module.exports = function(current) {
 	}
 	
 	win.add(mapView);
+	
+	win.addEventListener('open', function() {
+		map.annotations = annotations;
+	})
 	
 	return win;
 	

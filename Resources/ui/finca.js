@@ -79,6 +79,8 @@ module.exports = function(current) {
 	
 	var hitos = data[current].hitos;
 	
+	var annotations = [];
+	
 	for (i in hitos) {
 	
 		var annotation = Ti.Map.createAnnotation({
@@ -97,7 +99,9 @@ module.exports = function(current) {
 			_i:i
 		});
 	
-		map.addAnnotation(annotation);
+		//map.addAnnotation(annotation);
+		
+		annotations.push(annotation);
 		
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
@@ -115,6 +119,10 @@ module.exports = function(current) {
 	}
 	
 	win.add(map);
+	
+	win.addEventListener('open', function() {
+		map.annotations = annotations;
+	});
 	
 	/*
 

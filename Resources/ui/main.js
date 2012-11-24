@@ -80,6 +80,8 @@ module.exports = function() {
 		}
 	});
 	
+	var annotations = [];
+	
 	map.add(satellite);
 	
 	for (i in data) {
@@ -100,7 +102,7 @@ module.exports = function() {
 			_i:i
 		});
 	
-		map.addAnnotation(annotation);
+		//map.addAnnotation(annotation);
 		
 		annotation.addEventListener('click', function(e) {
 			if (e.clicksource == 'leftButton') {
@@ -116,9 +118,15 @@ module.exports = function() {
 			}
 		});
 		
+		annotations.push(annotation);
+		
 	}
 	
 	win.add(map);
+	
+	win.addEventListener('open', function() {
+		map.annotations = annotations;
+	});
 	
 	/*
 	var tableView = Ti.UI.createTableView($$.view);
