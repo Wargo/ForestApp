@@ -1,13 +1,14 @@
 
-module.exports = function(home) {
+module.exports = function(current) {
 	
-	var win = Ti.UI.createWindow($$.win);
-	win._current = 'guia';
+	//var win = Ti.UI.createWindow($$.win);
+	//win._current = 'guia';
 	
-	var menu = MyMenu(win, home);
-	win.add(menu);
+	//var menu = MyMenu(win, home);
+	//win.add(menu);
 	
 	var view = Ti.UI.createScrollView($$.view);
+	view.opacity = 0;
 	
 	var data = new Object();
 	
@@ -30,11 +31,13 @@ module.exports = function(home) {
 	view.add(title);
 	view.add(text);
 	
-	win.add(view);
+	return view;
 	
-	var footer = MyFooter();
-	win.add(footer);
+	//win.add(view);
 	
-	return win;
+	//var footer = MyFooter();
+	//win.add(footer);
+	
+	//return win;
 	
 }

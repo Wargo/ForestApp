@@ -8,6 +8,10 @@ module.exports = function(current) {
 	var win = Ti.UI.createWindow($$.win);
 	win.left = 320;
 	
+	mapView = Ti.UI.createView({
+		opacity:0
+	});
+	
 	headerText = Ti.UI.createLabel($$.textTitle);
 	headerText.top = 55;
 	headerText.left = 10;
@@ -25,9 +29,11 @@ module.exports = function(current) {
 		borderRadius:10,
 		userLocation:true,
 		region:{latitude:data[current].poisCenterLat, longitude:data[current].poisCenterLng, latitudeDelta:data[current].zoom, longitudeDelta:data[current].zoom},
-		mapType:Ti.Map.SATELLITE_TYPE,
-		opacity:0
+		mapType:Ti.Map.SATELLITE_TYPE
 	});
+	
+	mapView.add(headerText);
+	mapView.add(map);
 	
 	var satellite = Ti.UI.createButtonBar({
 		labels:['Satélite', 'Mapa'],
@@ -95,6 +101,7 @@ module.exports = function(current) {
 	auxRow.add(firma);
 	
 	win.add(tableView);
+	win.add(mapView);
 	
 	var menu = MyMiniMenu(win, current);
 	win.add(menu);
@@ -140,8 +147,6 @@ module.exports = function(current) {
 		});
 		
 	}
-	
-	win.add(map);
 	
 	return win;
 	

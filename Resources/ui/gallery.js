@@ -3,18 +3,19 @@ var MyGallery = require(Mods.gallery);
 
 var MyCrop = require(Mods.crop);
 
-module.exports = function(home, current) {
+module.exports = function(current) {
 	
-	var win = Ti.UI.createWindow($$.win);
-	win._current = 'gallery';
+	//var win = Ti.UI.createWindow($$.win);
+	//win._current = 'gallery';
 	
-	var menu = MyMenu(win, home);
-	win.add(menu);
+	//var menu = MyMenu(win, home);
+	//win.add(menu);
 	
-	var footer = MyFooter();
-	win.add(footer);
+	//var footer = MyFooter();
+	//win.add(footer);
 	
 	var tableView = Ti.UI.createTableView({
+		opacity:0,
 		top:45,
 		bottom:19,
 		backgroundColor:'transparent',
@@ -44,7 +45,7 @@ module.exports = function(home, current) {
 	}, 100);
 	
 	var loading = Ti.UI.createActivityIndicator();
-	win.add(loading);
+	auxRow.add(loading);
 	loading.show();
 	
 	function setData(images) {
@@ -87,8 +88,10 @@ module.exports = function(home, current) {
 		
 	}
 	
-	win.add(tableView);
+	return tableView;
 	
-	return win;
+	//win.add(tableView);
+	
+	//return win;
 	
 }

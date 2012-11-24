@@ -1,9 +1,9 @@
 
-MyImages = require(Mods.images);
-MyGPS = require(Mods.gps);
+//MyImages = require(Mods.images);
+//MyGPS = require(Mods.gps);
 MyMap = require(Mods.map);
-MyGuia = require(Mods.guia);
-MyMarco = require(Mods.marco);
+//MyGuia = require(Mods.guia);
+//MyMarco = require(Mods.marco);
 MyHito = require(Mods.hito);
 
 MyMenu = require(Mods.menu);

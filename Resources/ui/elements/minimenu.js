@@ -1,46 +1,105 @@
 
 var MyFinca = require(Mods.finca);
 
+var MyGuia = require(Mods.guia);
+var MyGallery = require(Mods.images);
+var MyMarco = require(Mods.marco);
+
 module.exports = function(win, current) {
+	
+	var guiaView = MyGuia(current);
+	win.add(guiaView);
+	var galleryView = MyGallery(current);
+	win.add(galleryView);
+	var marcoView = MyMarco(current);
+	win.add(marcoView);
 	
 	var view = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
 		top:0,
-		height:45
+		height:45,
+		layout:'horizontal'
 	});
 	
 	var back = Ti.UI.createButton($$.menuButton);
 	back.image = 'ui/images/menu/inicio_aplicacion.png';
 	back.left = 5;
-	view.add(back);
+
 	back.addEventListener('click', function() {
 		win.close({left:320});
 	});
 	
 	var info = Ti.UI.createButton($$.menuButton);
 	info.image = 'ui/images/menu/inicio_tour.png';
-	info.left = 55;
 	info.enabled = false;
-	view.add(info);
-	info.addEventListener('click', function() {
-		map.opacity = 0;
-		tableView.opacity = 1;
-		info.enabled = false;
-		mapButton.enabled = true;
-		win.remove(headerText);
+	
+	info.addEventListener('click', function(e) {
+		for (i in buttons) {
+			buttons[i].enabled = true;
+		}
+		e.source.enabled = false;
+		for (i in views) {
+			views[i].opacity = 0;
+		}
+		tableView.animate({opacity:1});;
 	});
 	
 	var mapButton = Ti.UI.createButton($$.menuButton);
 	mapButton.image = 'ui/images/menu/ubicacion_gps.png';
-	mapButton.left = 90;
-	view.add(mapButton);
-	mapButton.addEventListener('click', function() {
-		tableView.opacity = 0;
-		map.opacity = 1;
-		info.enabled = true;
-		mapButton.enabled = false;
-		win.add(headerText);
+	
+	mapButton.addEventListener('click', function(e) {
+		for (i in buttons) {
+			buttons[i].enabled = true;
+		}
+		e.source.enabled = false;
+		for (i in views) {
+			views[i].opacity = 0;
+		}
+		mapView.animate({opacity:1});;
 	});
+	
+	var guia = Ti.UI.createButton($$.menuButton);
+	guia.image = 'ui/images/menu/guia_entorno.png';
+	guia.addEventListener('click', function(e) {
+		for (i in buttons) {
+			buttons[i].enabled = true;
+		}
+		e.source.enabled = false;
+		guiaView.animate({opacity:1});;
+		for (i in views) {
+			views[i].opacity = 0;
+		}
+		guiaView.animate({opacity:1});;
+	});
+	
+	var gallery = Ti.UI.createButton($$.menuButton);
+	gallery.image = 'ui/images/menu/galeria.png';
+	gallery.addEventListener('click', function(e) {
+		for (i in buttons) {
+			buttons[i].enabled = true;
+		}
+		e.source.enabled = false;
+		for (i in views) {
+			views[i].opacity = 0;
+		}
+		galleryView.animate({opacity:1});;
+	});
+	
+	var marco = Ti.UI.createButton($$.menuButton);
+	marco.image = 'ui/images/menu/marco_juridico.png';
+	marco.addEventListener('click', function(e) {
+		for (i in buttons) {
+			buttons[i].enabled = true;
+		}
+		e.source.enabled = false;
+		for (i in views) {
+			views[i].opacity = 0;
+		}
+		marcoView.animate({opacity:1});;
+	});
+	
+	var buttons = [info, mapButton, guia, gallery, marco];
+	var views = [mapView, tableView, guiaView, galleryView, marcoView];
 	
 	var start = Ti.UI.createImageView({
 		image:'ui/images/arrow.png',
@@ -50,18 +109,25 @@ module.exports = function(win, current) {
 	});
 	
 	var textHeader = Ti.UI.createLabel($$.textHeader);
-	textHeader.text = 'Iniciar tour';
+	textHeader.text = 'Tour';
 	textHeader.left = 0;
 	
 	var startButton = Ti.UI.createButton({
 		backgroundImage:'none',
-		right:5,
-		width:125
+		left:12,
+		width:68,
+		top:6
 	});
 	
 	startButton.add(textHeader);
 	startButton.add(start);
-	
+
+	view.add(back);
+	view.add(info);
+	view.add(mapButton);
+	view.add(guia);
+	view.add(gallery);
+	view.add(marco);
 	view.add(startButton);
 	
 	startButton.addEventListener('click', function() {
