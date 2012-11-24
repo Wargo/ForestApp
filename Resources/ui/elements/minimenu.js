@@ -1,10 +1,11 @@
 
 var MyFinca = require(Mods.finca);
 
-var MyGuia = require(Mods.guia);
-var MyGallery = require(Mods.images);
-var MyMarco = require(Mods.marco);
-var MyPOIS = require(Mods.pois);
+MyGuia = require(Mods.guia);
+MyGallery = require(Mods.images);
+MyMarco = require(Mods.marco);
+MyPOIS = require(Mods.pois);
+MyMap = require(Mods.map);
 
 module.exports = function(win, current) {
 	
@@ -16,6 +17,8 @@ module.exports = function(win, current) {
 	win.add(marcoView);
 	var mapView = MyPOIS(current);
 	win.add(mapView);
+	var staticMapView = MyMap(current);
+	win.add(staticMapView);
 	
 	var view = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
@@ -49,7 +52,6 @@ module.exports = function(win, current) {
 	
 	var mapButton = Ti.UI.createButton($$.menuButton);
 	mapButton.image = 'ui/images/menu/ubicacion_gps.png';
-	
 	mapButton.addEventListener('click', function(e) {
 		for (i in buttons) {
 			buttons[i].enabled = true;
@@ -58,7 +60,7 @@ module.exports = function(win, current) {
 		for (i in views) {
 			views[i].opacity = 0;
 		}
-		mapView.animate({opacity:1});;
+		staticMapView.animate({opacity:1});;
 	});
 	
 	var guia = Ti.UI.createButton($$.menuButton);
@@ -102,7 +104,7 @@ module.exports = function(win, current) {
 	});
 	
 	var buttons = [info, mapButton, guia, gallery, marco];
-	var views = [mapView, tableView, guiaView, galleryView, marcoView];
+	var views = [staticMapView, tableView, guiaView, galleryView, marcoView];
 	
 	var start = Ti.UI.createImageView({
 		image:'ui/images/arrow.png',
@@ -122,7 +124,9 @@ module.exports = function(win, current) {
 		top:6
 	});
 	
-	startButton.add(textHeader);
+	setTimeout(function() {
+		startButton.add(textHeader);
+	}, 100);
 	startButton.add(start);
 
 	view.add(back);

@@ -1,21 +1,37 @@
 
 //MyImages = require(Mods.images);
 //MyGPS = require(Mods.gps);
-MyMap = require(Mods.map);
+//MyMap = require(Mods.map);
 //MyGuia = require(Mods.guia);
 //MyMarco = require(Mods.marco);
 MyHito = require(Mods.hito);
 
-MyMenu = require(Mods.menu);
+//MyMenu = require(Mods.menu);
 
 module.exports = function(current) {
 	
 	var win = Ti.UI.createWindow($$.win);
-	win._current = 'home';
+	//win._current = 'home';
 	win.width = win.left = 320;
 	
-	var menu = MyMenu(win, null, current);
-	win.add(menu);
+	//var menu = MyMenu(win, null, current);
+	//win.add(menu);
+	var header = Ti.UI.createView({
+		backgroundImage:'ui/images/fondo_menu.png',
+		top:0,
+		height:45
+	});
+	win.add(header);
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
+	header.add(back);
+	back.addEventListener('click', function() {
+		win.close({left:320})
+	});
+	var title = Ti.UI.createLabel($$.textTitle);
+	title.text = 'Tour';
+	header.add(title);
 	
 	var footer = MyFooter();
 	win.add(footer);

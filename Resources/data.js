@@ -95,7 +95,8 @@ module.exports = {
 			poisText:'La Finca Hoya de Don Gil es un predio forestal enclavado en la comarca de la Sierra Noroeste de la Región de Murcia, flanqueado por las Sierras de Burete y del Quípar, y situada en los municipios de Cehegín y Caravaca de la Cruz.\r\rLa finca agroforestal es visitable, y se ofrece la posibilidad de realizar una visita autoguiada. El contacto se realizará a través de la asociación PROFOMUR',
 			poisFirma:'PROFOMUR\r\rhttp://www.profomur.com/profomur/\r\rC/ Constitución Nº 7; 2 ª Planta. Edificio Biblioteca 30440 Moratalla (Murcia)\r\rTeléfono: 968706380 - E-mail: profomur@yahoo.es',
 			poisImage:'ui/images/pois/f1_general.jpg',
-			staticMap:'ui/images/f1_estatico.jpg'
+			staticMap:'ui/images/f1_estatico1.jpg',
+			staticMapText:'Antes de realizar el tour que se propone para la finca agroforestal de La Hoya de Don Gil se presenta una pequeña muestra de los aspectos más relevantes en cuanto a valores naturales y gestión forestal sostenible. Se hace una selección de estos puntos de interés que pueden dar una visión más amplia del entorno natural que visitas y aportar detalles que quizá no sean apreciables cuando emprendas el recorrido por este monte.\r\rPunto de Interés 1: ZEPA\r\rPunto de Interés 2: Coto de caza\r\rPunto de Interés 3: Biomasa\r\rPunto de Interés 4: Pinar natural\r\rPunto de Interés 5: Pinar de repoblación'
 		},
 		/*
 		{

@@ -4,20 +4,24 @@ module.exports = {
 	/*
 	 * Windows
 	 */
-	main:'ui/main',
-	finca:'ui/finca',
-	images:'ui/gallery',
+	main:'ui/main', // Home -> mapa de España
+	finca:'ui/finca', // Home del tour
 	gps:'ui/gps',
-	map:'ui/map',
-	marco:'ui/marco',
-	guia:'ui/guia',
 	hito:'ui/hito',
-	home:'ui/home',
-	pois:'ui/pois',
+	home:'ui/home', // Home de la app
 	poi:'ui/poi',
 	information:'ui/info',
 	tutorial:'ui/tutorial',
-	homeFinca:'ui/homeFinca',
+	homeFinca:'ui/homeFinca', // Home de una finca
+	
+	/*
+	 * Views
+	 */
+	pois:'ui/views/pois',
+	marco:'ui/views/marco',
+	guia:'ui/views/guia',
+	images:'ui/views/gallery',
+	map:'ui/views/map',
 	
 	/*
 	 * Styles
@@ -37,6 +41,7 @@ module.exports = {
 	 */
 	crop:'ui/modules/crop',
 	gallery:'ui/modules/gallery',
+	amplify:'ui/modules/amplify',
 	
 	/*
 	 * BBDD

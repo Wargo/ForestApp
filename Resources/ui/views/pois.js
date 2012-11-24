@@ -3,20 +3,49 @@ var MyPOI = require(Mods.poi);
 
 module.exports = function(current) {
 	
+	var win = Ti.UI.createWindow($$.win);
+	win.left = 320;
+	
+	var header = Ti.UI.createView({
+		backgroundImage:'ui/images/fondo_menu.png',
+		top:0,
+		height:45
+	});
+	win.add(header);
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
+	header.add(back);
+	back.addEventListener('click', function() {
+		win.close({left:320})
+	});
+	
+	var headerText = Ti.UI.createLabel($$.textHeader);
+	headerText.text = 'POIs';
+	
+	header.add(headerText);
+	
+	var footer = MyFooter();
+	win.add(footer);
+	
 	mapView = Ti.UI.createView({
-		opacity:0
+		top:50,
+		bottom:19
+		//opacity:0
 	});
 	
 	headerText = Ti.UI.createLabel($$.textTitle);
-	headerText.top = 55;
+	headerText.top = 10; //55;
 	headerText.left = 10;
 	headerText.right = 10;
 	headerText.textAlign = 'center';
 	headerText.text = 'Selecciona el punto de interés y accede a él pinchando en su nombre';
 	
 	map = Ti.Map.createView({
-		top:45 + 60,
-		bottom:19 + 10,
+		//top:45 + 60,
+		top:10,
+		//bottom:19 + 10,
+		bottom:10,
 		left:10,
 		right:10,
 		borderColor:'#CCC',
@@ -90,6 +119,8 @@ module.exports = function(current) {
 		
 	}
 	
-	return mapView;
+	win.add(mapView);
+	
+	return win;
 	
 }

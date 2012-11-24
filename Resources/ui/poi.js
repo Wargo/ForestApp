@@ -36,7 +36,8 @@ module.exports = function(x, y) {
 		height:230,
 		cacheSize:1,
 		borderColor:'#CCC',
-		borderWidth:1
+		borderWidth:1,
+		backgroundColor:'#8000'
 	});
 	
 	var images = data[x].pois[y].images;

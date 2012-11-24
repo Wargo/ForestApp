@@ -3,7 +3,14 @@ module.exports = function(images, pos) {
 	
 	var win = Ti.UI.createWindow({
 		backgroundColor:'#000',
-		opacity:0
+		opacity:0,
+		//fullscreen:true,
+		orientationModes:[
+			Titanium.UI.PORTRAIT,
+			//Titanium.UI.UPSIDE_PORTRAIT,
+			Titanium.UI.LANDSCAPE_LEFT,
+			Titanium.UI.LANDSCAPE_RIGHT
+		]
 	});
 	
 	var scrollableView = Ti.UI.createScrollableView({
