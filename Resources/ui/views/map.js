@@ -56,7 +56,7 @@ module.exports = function(current) {
 	});
 	
 	var button = Ti.UI.createButtonBar({
-		labels:['Ver POIs'],
+		labels:['Ver POIs', 'Abrir en wikiloc'],
 		style:Ti.UI.iPhone.SystemButtonStyle.BAR,
 		backgroundColor:'brown',
 		top:10
