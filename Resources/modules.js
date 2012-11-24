@@ -17,6 +17,7 @@ module.exports = {
 	poi:'ui/poi',
 	information:'ui/info',
 	tutorial:'ui/tutorial',
+	homeFinca:'ui/homeFinca',
 	
 	/*
 	 * Styles

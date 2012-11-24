@@ -60,9 +60,9 @@ module.exports = function(win, parent, c) {
 	view.add(home);
 	//view.add(gps);
 	view.add(staticMap);
-	view.add(guia);
-	view.add(gallery);
-	view.add(marco);
+	//view.add(guia);
+	//view.add(gallery);
+	//view.add(marco);
 	
 	back.addEventListener('click', function() {
 		win.close({left:320});

@@ -4,6 +4,7 @@ var MyFinca = require(Mods.finca);
 var MyGuia = require(Mods.guia);
 var MyGallery = require(Mods.images);
 var MyMarco = require(Mods.marco);
+var MyPOIS = require(Mods.pois);
 
 module.exports = function(win, current) {
 	
@@ -13,6 +14,8 @@ module.exports = function(win, current) {
 	win.add(galleryView);
 	var marcoView = MyMarco(current);
 	win.add(marcoView);
+	var mapView = MyPOIS(current);
+	win.add(mapView);
 	
 	var view = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
