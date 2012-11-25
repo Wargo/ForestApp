@@ -1,27 +1,23 @@
 
-//MyImages = require(Mods.images);
-//MyGPS = require(Mods.gps);
-//MyMap = require(Mods.map);
-//MyGuia = require(Mods.guia);
-//MyMarco = require(Mods.marco);
 MyHito = require(Mods.hito);
 
-//MyMenu = require(Mods.menu);
+MyMap2 = require(Mods.map2);
 
 module.exports = function(current) {
 	
 	var win = Ti.UI.createWindow($$.win);
-	//win._current = 'home';
 	win.width = win.left = 320;
 	
-	//var menu = MyMenu(win, null, current);
-	//win.add(menu);
+	var staticMapView = MyMap2(current);
+	win.add(staticMapView);
+	
 	var header = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
 		top:0,
 		height:45
 	});
 	win.add(header);
+	
 	var back = Ti.UI.createButton($$.menuButton);
 	back.image = 'ui/images/menu/inicio_aplicacion.png';
 	back.left = 5;
@@ -29,23 +25,50 @@ module.exports = function(current) {
 	back.addEventListener('click', function() {
 		win.close({left:320})
 	});
+	
+	var mapButton = Ti.UI.createButton($$.menuButton);
+	mapButton.left = 50;
+	mapButton.enabled = false;
+	mapButton.image = 'ui/images/menu/mapa_estatico.png';
+	header.add(mapButton);
+	mapButton.addEventListener('click', function() {
+		mapView.animate({opacity:1});
+		staticMapView.opacity = 0;
+		mapButton.enabled = false;
+		staticMap.enabled = true;
+	});
+	
+	var staticMap = Ti.UI.createButton($$.menuButton);
+	staticMap.left = 90;
+	staticMap.image = 'ui/images/menu/ubicacion_gps.png';
+	header.add(staticMap);
+	staticMap.addEventListener('click', function() {
+		staticMapView.animate({opacity:1});
+		mapView.opacity = 0;
+		mapButton.enabled = true;
+		staticMap.enabled = false;
+	});
+	
 	var title = Ti.UI.createLabel($$.textTitle);
 	title.text = 'Tour';
-	header.add(title);
+	//header.add(title);
 	
 	var footer = MyFooter();
 	win.add(footer);
 	
 	var headerText = Ti.UI.createLabel($$.textTitle);
-	headerText.top = 55;
+	headerText.top = 5;
 	headerText.textAlign = 'center';
 	headerText.text = 'Selecciona el hito y pincha en su nombre para acceder a él';
 	
-	win.add(headerText);
+	var mapView = Ti.UI.createView({
+		top:50,
+		bottom:19
+	});
 	
 	var map = Ti.Map.createView({
-		top:45 + 60,
-		bottom:19 + 10,
+		top:60,
+		bottom:10,
 		left:10,
 		right:10,
 		borderColor:'#CCC',
@@ -111,14 +134,17 @@ module.exports = function(current) {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
-				MyHito(win, current, e.source._i).open();
+				MyHito(current, e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
 			}
 		});
 		
 	}
 	
-	win.add(map);
+	mapView.add(headerText);
+	mapView.add(map);
+	
+	win.add(mapView);
 	
 	win.addEventListener('open', function() {
 		map.annotations = annotations;

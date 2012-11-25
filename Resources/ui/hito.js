@@ -1,13 +1,25 @@
 
 var MySound = require(Mods.sound);
 
-module.exports = function(home, x, y) {
+module.exports = function(x, y) {
 	
 	var win = Ti.UI.createWindow($$.win);
-	win._current = 'hito';
+	win.left = 320;
 	
-	var menu = MyMenu(win, home);
-	win.add(menu);
+	var header = Ti.UI.createView({
+		backgroundImage:'ui/images/fondo_menu.png',
+		top:0,
+		height:45
+	});
+	win.add(header);
+	
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
+	header.add(back);
+	back.addEventListener('click', function() {
+		win.close({left:320})
+	});
 	
 	var view = Ti.UI.createScrollView($$.view);
 	view.bottom = 51;
@@ -70,7 +82,14 @@ module.exports = function(home, x, y) {
 	loader.show();
 
 	setTimeout(function() {
-		new MySound('ui/sounds/happytreefriends.mp3', soundView, loader);
+		if (data[x].hitos[y].sound) {
+			new MySound(data[x].hitos[y].sound, soundView, loader);
+		} else {
+			loader.hide();
+			var noSound = Ti.UI.createLabel($$.text);
+			noSound.text = 'Sin audio adjunto';
+			soundView.add(noSound);
+		}
 	}, 100);
 	
 	win.add(soundView);

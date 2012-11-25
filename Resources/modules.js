@@ -22,6 +22,7 @@ module.exports = {
 	guia:'ui/views/guia',
 	images:'ui/views/gallery',
 	map:'ui/views/map',
+	map2:'ui/views/map2',
 	
 	/*
 	 * Styles
