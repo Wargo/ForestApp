@@ -25,17 +25,38 @@ module.exports = function(url, view, loader) {
 	var duration = audioPlayer.getDuration();
 	var playing = Ti.UI.createProgressBar({
 		max:duration,
+		bottom:20,
 		right:20,
 		width:200,
 		value:0,
 		style:Ti.UI.iPhone.ProgressBarStyle.BAR
 	});
 	
+	if (Math.round(audioPlayer.duration % 60) < 10) {
+		var totalDuration = Math.floor(audioPlayer.duration / 60) + ':0' + Math.round(audioPlayer.duration % 60);
+	} else {
+		var totalDuration = Math.floor(audioPlayer.duration / 60) + ':' + Math.round(audioPlayer.duration % 60);
+	}
+	
+	var display = Ti.UI.createLabel($$.text);
+	display.text = '0:00 / ' + totalDuration;
+	display.bottom = 5;
+	display.right = 20;
+	view.add(display);
+	
 	var interval = setInterval(function() {
 		if (audioPlayer.playing) {
 			playing.value = audioPlayer.getTime();
+			var displayMinutes = Math.floor(audioPlayer.getTime() / 60);
+			var displaySeconds = Math.round(audioPlayer.getTime() % 60);
+			if (displaySeconds < 10) {
+				displaySeconds = '0' + displaySeconds;
+			} 
+			display.text = displayMinutes + ':' + displaySeconds + ' / ' + totalDuration;
 		}
 	}, 10);
+	
+	alert(audioPlayer.duration)
 	
 	view.add(startStopButton);
 	view.add(pauseResumeButton);
