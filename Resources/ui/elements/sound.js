@@ -56,8 +56,6 @@ module.exports = function(url, view, loader) {
 		}
 	}, 10);
 	
-	alert(audioPlayer.duration)
-	
 	view.add(startStopButton);
 	view.add(pauseResumeButton);
 	view.add(playing);
