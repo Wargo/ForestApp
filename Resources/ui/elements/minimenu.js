@@ -1,5 +1,7 @@
 
-var MyFinca = require(Mods.finca);
+//var MyFinca = require(Mods.finca);
+
+MyMap2 = require(Mods.map2);
 
 MyGuia = require(Mods.guia);
 MyGallery = require(Mods.images);
@@ -138,7 +140,8 @@ module.exports = function(win, current) {
 	view.add(startButton);
 	
 	startButton.addEventListener('click', function() {
-		new MyFinca(current).open({left:0});
+		//new MyFinca(current).open({left:0});
+		MyMap2(current).open({left:0});
 	});
 	
 	return view;

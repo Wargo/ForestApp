@@ -1,15 +1,20 @@
 
 MyHito = require(Mods.hito);
 
-MyMap2 = require(Mods.map2);
+//MyMap2 = require(Mods.map2);
 
 module.exports = function(current) {
 	
 	var win = Ti.UI.createWindow($$.win);
 	win.width = win.left = 320;
 	
-	var staticMapView = MyMap2(current);
-	win.add(staticMapView);
+	mapView = Ti.UI.createView({
+		top:50,
+		bottom:19
+	});
+	
+	//var staticMapView = MyMap2(current);
+	//win.add(staticMapView);
 	
 	var header = Ti.UI.createView({
 		backgroundImage:'ui/images/fondo_menu.png',
@@ -25,7 +30,7 @@ module.exports = function(current) {
 	back.addEventListener('click', function() {
 		win.close({left:320})
 	});
-	
+	/*
 	var mapButton = Ti.UI.createButton($$.menuButton);
 	mapButton.left = 50;
 	mapButton.enabled = false;
@@ -48,7 +53,7 @@ module.exports = function(current) {
 		mapButton.enabled = true;
 		staticMap.enabled = false;
 	});
-	
+	*/
 	var title = Ti.UI.createLabel($$.textTitle);
 	title.text = 'Tour';
 	//header.add(title);
@@ -60,11 +65,6 @@ module.exports = function(current) {
 	headerText.top = 5;
 	headerText.textAlign = 'center';
 	headerText.text = 'Selecciona el hito y pincha en su nombre para acceder a él';
-	
-	var mapView = Ti.UI.createView({
-		top:50,
-		bottom:19
-	});
 	
 	var map = Ti.Map.createView({
 		top:60,

@@ -27,7 +27,7 @@ module.exports = function() {
 	var appButton = Ti.UI.createButton({
 		backgroundImage:'ui/images/botones_inicio/boton_aplicacion.jpg',
 		left:30,
-		bottom:100,
+		bottom:160,
 		height:61,
 		width:61,
 		opacity:0
@@ -35,7 +35,7 @@ module.exports = function() {
 	
 	var info = Ti.UI.createButton({
 		backgroundImage:'ui/images/botones_inicio/boton_info.jpg',
-		bottom:100,
+		bottom:160,
 		height:61,
 		width:61,
 		opacity:0
@@ -43,7 +43,7 @@ module.exports = function() {
 	
 	var tutorial = Ti.UI.createButton({
 		backgroundImage:'ui/images/botones_inicio/boton_instrucciones.jpg',
-		bottom:100,
+		bottom:160,
 		right:30,
 		height:61,
 		width:61,

@@ -1,10 +1,31 @@
 
 var MyAmplify = require(Mods.amplify);
 
+var MyFinca = require(Mods.finca);
+
 module.exports = function(current) {
 	
+	var win = Ti.UI.createWindow($$.win);
+	win.width = win.left = 320;
+	
+	var header = Ti.UI.createView({
+		backgroundImage:'ui/images/fondo_menu.png',
+		top:0,
+		height:45
+	});
+	win.add(header);
+	
+	var back = Ti.UI.createButton($$.menuButton);
+	back.image = 'ui/images/menu/inicio_aplicacion.png';
+	back.left = 5;
+	header.add(back);
+	back.addEventListener('click', function() {
+		win.close({left:320})
+	});
+	
 	var view = Ti.UI.createView({
-		opacity:0,
+		top:50,
+		bottom:19,
 		layout:'vertical'
 	});
 	
@@ -12,7 +33,7 @@ module.exports = function(current) {
 		maxZoomScale: 10,
 	    minZoomScale: 1,
 	    zoomScale: 1,
-	    top:60,
+	    top:10,
 	    height:200,
 	    left:10,
 	    right:10,
@@ -35,13 +56,19 @@ module.exports = function(current) {
 	});
 	
 	var button = Ti.UI.createButtonBar({
-		labels:['Abrir en Wikiloc'],
+		labels:['Abrir en Wikiloc', 'Mapa interactivo'],
 		style:Ti.UI.iPhone.SystemButtonStyle.BAR,
 		backgroundColor:'brown',
 		top:10
 	});
-	button.addEventListener('click', function() {
-		Ti.Platform.openURL(data[current].url);
+	button.addEventListener('click', function(e) {
+		if (e.index == 0) {
+			Ti.Platform.openURL(data[current].url);
+		} else {
+			//view.opacity = 0;
+			//mapView.animate({opacity:1});
+			MyFinca(current).open({left:0});
+		}
 	});
 	
 	var textView = Ti.UI.createScrollView($$.view);
@@ -59,6 +86,8 @@ module.exports = function(current) {
 	view.add(button);
 	view.add(textView);
 	
-	return view;
+	win.add(view);
+	
+	return win;
 	
 }
