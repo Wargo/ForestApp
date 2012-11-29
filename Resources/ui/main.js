@@ -3,7 +3,7 @@ var $$ = require(Mods.styles);
 var MyData = require(Mods.data);
 var data = MyData.bbdd;
 
-var MyFinca = require(Mods.finca);
+//var MyFinca = require(Mods.finca);
 var MyFooter = require(Mods.footer);
 var MyHomeFinca = require(Mods.homeFinca);
 

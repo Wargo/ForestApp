@@ -3,6 +3,8 @@ var $$ = require(Mods.styles);
 var MyData = require(Mods.data);
 var data = MyData.bbdd;
 
+var MyFooter = require(Mods.footer);
+
 module.exports = function(x, y) {
 	
 	var win = Ti.UI.createWindow($$.win);

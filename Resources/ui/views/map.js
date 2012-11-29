@@ -4,6 +4,7 @@ var MyData = require(Mods.data);
 var data = MyData.bbdd;
 
 var MyAmplify = require(Mods.amplify);
+var MyPOIS = require(Mods.pois);
 
 module.exports = function(current) {
 	
@@ -45,7 +46,7 @@ module.exports = function(current) {
 		top:10
 	});
 	button.addEventListener('click', function() {
-		MyPOIS(current).open({left:0});
+		new MyPOIS(current).open({left:0});
 	});
 	
 	var textView = Ti.UI.createScrollView($$.view);
