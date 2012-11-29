@@ -1,3 +1,7 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
 var MySound = require(Mods.sound);
 

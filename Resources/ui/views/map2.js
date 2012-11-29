@@ -1,6 +1,9 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
 var MyAmplify = require(Mods.amplify);
-
 var MyFinca = require(Mods.finca);
 
 module.exports = function(current) {
@@ -67,7 +70,7 @@ module.exports = function(current) {
 		} else {
 			//view.opacity = 0;
 			//mapView.animate({opacity:1});
-			MyFinca(current).open({left:0});
+			new MyFinca(current).open({left:0});
 		}
 	});
 	

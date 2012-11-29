@@ -1,7 +1,10 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
-MyHito = require(Mods.hito);
-
-//MyMap2 = require(Mods.map2);
+var MyFooter = require(Mods.footer);
+var MyHito = require(Mods.hito);
 
 module.exports = function(current) {
 	
@@ -134,7 +137,7 @@ module.exports = function(current) {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
-				MyHito(current, e.source._i).open({left:0});
+				new MyHito(current, e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
 			}
 		});

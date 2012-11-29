@@ -1,3 +1,5 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
 
 module.exports = function(url, view, loader) {
 	

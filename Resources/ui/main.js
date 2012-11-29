@@ -1,11 +1,10 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
 var MyFinca = require(Mods.finca);
-
-MyFooter = require(Mods.footer);
-
-MyData = require(Mods.data);
-data = MyData.bbdd;
-
+var MyFooter = require(Mods.footer);
 var MyHomeFinca = require(Mods.homeFinca);
 
 module.exports = function() {

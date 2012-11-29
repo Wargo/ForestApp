@@ -1,25 +1,25 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
 
-//var MyFinca = require(Mods.finca);
+var MyMap2 = require(Mods.map2);
 
-MyMap2 = require(Mods.map2);
-
-MyGuia = require(Mods.guia);
-MyGallery = require(Mods.images);
-MyMarco = require(Mods.marco);
-MyPOIS = require(Mods.pois);
-MyMap = require(Mods.map);
+var MyGuia = require(Mods.guia);
+var MyGallery = require(Mods.images);
+var MyMarco = require(Mods.marco);
+var MyPOIS = require(Mods.pois);
+var MyMap = require(Mods.map);
 
 module.exports = function(win, current) {
 	
-	var guiaView = MyGuia(current);
+	var guiaView = new MyGuia(current);
 	win.add(guiaView);
-	var galleryView = MyGallery(current);
+	var galleryView = new MyGallery(current);
 	win.add(galleryView);
-	var marcoView = MyMarco(current);
+	var marcoView = new MyMarco(current);
 	win.add(marcoView);
-	var mapView = MyPOIS(current);
+	var mapView = new MyPOIS(current);
 	win.add(mapView);
-	var staticMapView = MyMap(current);
+	var staticMapView = new MyMap(current);
 	win.add(staticMapView);
 	
 	var view = Ti.UI.createView({

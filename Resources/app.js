@@ -1,16 +1,15 @@
 
 (function() {
 	
-	Mods = require('/modules');
+	var Mods = require('/modules');
 	
-	$$ = require(Mods.styles);
+	var $$ = require(Mods.styles);
 	
 	var MyWindow = require(Mods.home);
 	
 	setTimeout(function() {
 		new MyWindow().open({left:0});
 	}, 3000);
-	
 			
 	Ti.App.addEventListener('openURL', function(e){
 	    Ti.Platform.openURL(e.url);

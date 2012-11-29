@@ -1,7 +1,11 @@
 
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+
 var MyWindow = require(Mods.main);
 var MyTutorial = require(Mods.tutorial);
 var MyInfo = require(Mods.information);
+var MyFooter = require(Mods.footer);
 
 module.exports = function() {
 	

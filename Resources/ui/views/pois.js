@@ -1,5 +1,10 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
 var MyPOI = require(Mods.poi);
+var MyFooter = require(Mods.footer);
 
 module.exports = function(current) {
 	
@@ -116,7 +121,7 @@ module.exports = function(current) {
 				}
 				*/
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
-				MyPOI(current, e.source._i).open({left:0});
+				new MyPOI(current, e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
 			}
 		});

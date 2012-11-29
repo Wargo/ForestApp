@@ -1,5 +1,10 @@
+var Mods = require('/modules');
+var $$ = require(Mods.styles);
+var MyData = require(Mods.data);
+var data = MyData.bbdd;
 
 var MyMiniMenu = require(Mods.minimenu);
+var MyFooter = require(Mods.footer);
 
 module.exports = function(current) {
 	
@@ -52,7 +57,7 @@ module.exports = function(current) {
 	
 	win.add(tableView);
 	
-	var menu = MyMiniMenu(win, current);
+	var menu = new MyMiniMenu(win, current);
 	win.add(menu);
 	
 	var footer = MyFooter();
