@@ -8,15 +8,6 @@ var MyCrop = require(Mods.crop);
 
 module.exports = function(current) {
 	
-	//var win = Ti.UI.createWindow($$.win);
-	//win._current = 'gallery';
-	
-	//var menu = MyMenu(win, home);
-	//win.add(menu);
-	
-	//var footer = MyFooter();
-	//win.add(footer);
-	
 	var tableView = Ti.UI.createTableView({
 		opacity:0,
 		top:45,
@@ -36,7 +27,7 @@ module.exports = function(current) {
 	var basicLeft = 10;
 	var basicTop = 10;
 	var width = 94;
-	var height = 70;
+	var height = 94;//70;
 	var spaceh = width + 10;
 	var spacev = height + 10;
 	var rows = 0;
@@ -73,7 +64,7 @@ module.exports = function(current) {
 				_i:i
 			});
 			
-			image = MyCrop(image, images[i].name, width, height, 5, true);
+			image = MyCrop(image, images[i].name, width, null, 5, true);
 			
 			auxRow.add(image);
 			

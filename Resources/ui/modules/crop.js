@@ -3,7 +3,7 @@ ImageFactory = require('ti.imagefactory');
 
 module.exports = function(image, name, width, height, radius, saveFiles) {
 	
-	var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory + name + '.jpg');
+	var file = Ti.Filesystem.getFile(Ti.Filesystem.applicationCacheDirectory + name + '.jpg');
 			
 	if (Ti.App.Properties.getBool('forceImages', false)) {
 		file.deleteFile();
