@@ -10,7 +10,7 @@ module.exports = function(current) {
 	//var view = Ti.UI.createScrollView($$.view);
 	var view = Ti.UI.createWebView($$.view);
 	view.opacity = 0;
-	view.url = 'ui/html/mjuridico.html';
+	view.url = data[current].marco;
 	view.backgroundColor = '#2000';
 	
 	var data = new Object();
