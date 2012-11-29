@@ -5,6 +5,7 @@ var data = MyData.bbdd;
 
 var MyAmplify = require(Mods.amplify);
 var MyFinca = require(Mods.finca);
+var MyWeb = require(Mods.web);
 
 module.exports = function(current) {
 	
@@ -66,10 +67,9 @@ module.exports = function(current) {
 	});
 	button.addEventListener('click', function(e) {
 		if (e.index == 0) {
-			Ti.Platform.openURL(data[current].url);
+			//Ti.Platform.openURL(data[current].url);
+			new MyWeb(data[current].url).open({top:0});
 		} else {
-			//view.opacity = 0;
-			//mapView.animate({opacity:1});
 			new MyFinca(current).open({left:0});
 		}
 	});

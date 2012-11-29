@@ -13,6 +13,7 @@ module.exports = {
 	information:'ui/info',
 	tutorial:'ui/tutorial',
 	homeFinca:'ui/homeFinca', // Home de una finca
+	web:'ui/web',
 	
 	/*
 	 * Views

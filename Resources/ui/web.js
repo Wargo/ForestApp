@@ -1,31 +1,36 @@
 var Mods = require('/modules');
 var $$ = require(Mods.styles);
-var MyData = require(Mods.data);
-var data = MyData.bbdd;
 
-module.exports = function(current) {
+module.exports = function(url) {
 	
-	var view = Ti.UI.createView($$.view);
-	view.layout = 'none';
-	view.opacity = 0;
+	var win = Ti.UI.createWindow({
+		top:Ti.Platform.displayCaps.platformHeight,
+		height:Ti.Platform.displayCaps.platformHeight,
+		backgroundColor:'#8000',
+		orientationModes:[
+			Titanium.UI.PORTRAIT,
+			//Titanium.UI.UPSIDE_PORTRAIT,
+			Titanium.UI.LANDSCAPE_LEFT,
+			Titanium.UI.LANDSCAPE_RIGHT
+		]
+	});
 	
 	var webView = Ti.UI.createWebView();
-	webView.bottom = 35;
-	webView.url = data[current].marco;
+	webView.top = 35 + 20;
+	webView.bottom = 35 + 20;
+	webView.left = webView.right = 20;
+	webView.url = url;
 	
-	view.add(webView);
+	win.add(webView);
 	
 	var loader = Ti.UI.createActivityIndicator();
 	
 	webView.addEventListener('load', function() {
 		loader.hide();
-		if (webView.url.match(/^file:\/\//)) {
-		//if (!webView.canGoBack()) {
+		if (!webView.canGoBack()) {
 			back.enabled = false;
-			out.enabled = false;
 		} else {
 			back.enabled = true;
-			out.enabled = true;
 		}
 		
 		if (!webView.canGoForward()) {
@@ -35,13 +40,39 @@ module.exports = function(current) {
 		}
 	});
 	
+	var topBar = Ti.UI.createView({
+		backgroundColor:'#000',
+		height:35,
+		top:20,
+		right:20,
+		left:20,
+		borderColor:'#CCC',
+		borderWidth:1
+	});
+	
+	var close = Ti.UI.createButtonBar({
+		labels:['Cerrar'],
+		style:Ti.UI.iPhone.SystemButtonStyle.BAR,
+		backgroundColor:'black',
+		right:10
+	});
+	close.addEventListener('click', function(e) {
+		win.close({top:500});
+	});
+	topBar.add(close);
+	
 	var bottomBar = Ti.UI.createView({
 		backgroundColor:'#000',
 		height:35,
-		bottom:0
+		bottom:20,
+		right:20,
+		left:20,
+		borderColor:'#CCC',
+		borderWidth:1
 	});
 	
-	view.add(bottomBar);
+	win.add(bottomBar);
+	win.add(topBar);
 	
 	bottomBar.add(loader);
 	
@@ -84,9 +115,6 @@ module.exports = function(current) {
 	back.addEventListener('click', function() {
 		if (webView.canGoBack()) {
 			webView.goBack();
-		} else if (!webView.url.match(/^file:\/\//)) {
-			webView.url = data[current].marco;
-			fwd.enabled = false;
 		}
 	});
 	fwd.addEventListener('click', function() {
@@ -106,6 +134,6 @@ module.exports = function(current) {
 		loader.show();
 	});
 	
-	return view;
-	
+	return win;
+		
 }
