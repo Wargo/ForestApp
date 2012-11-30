@@ -20,6 +20,7 @@ module.exports = function(url) {
 	webView.bottom = 35 + 20;
 	webView.left = webView.right = 20;
 	webView.url = url;
+	webView.zIndex = 100;
 	
 	win.add(webView);
 	
@@ -42,19 +43,21 @@ module.exports = function(url) {
 	
 	var topBar = Ti.UI.createView({
 		backgroundColor:'#000',
-		height:35,
+		height:45,
 		top:20,
 		right:20,
 		left:20,
 		borderColor:'#CCC',
-		borderWidth:1
+		borderWidth:1,
+		borderRadius:10
 	});
 	
 	var close = Ti.UI.createButtonBar({
 		labels:['Cerrar'],
 		style:Ti.UI.iPhone.SystemButtonStyle.BAR,
 		backgroundColor:'black',
-		right:10
+		right:10,
+		top:5
 	});
 	close.addEventListener('click', function(e) {
 		win.close({top:500});
@@ -63,12 +66,13 @@ module.exports = function(url) {
 	
 	var bottomBar = Ti.UI.createView({
 		backgroundColor:'#000',
-		height:35,
+		height:45,
 		bottom:20,
 		right:20,
 		left:20,
 		borderColor:'#CCC',
-		borderWidth:1
+		borderWidth:1,
+		borderRadius:10
 	});
 	
 	win.add(bottomBar);
@@ -79,6 +83,7 @@ module.exports = function(url) {
 	var back = Ti.UI.createButton({
 		backgroundImage:'/ui/images/back.png',
 		left:10,
+		bottom:5,
 		width:25,
 		height:25,
 		enabled:false,
@@ -87,6 +92,7 @@ module.exports = function(url) {
 	var fwd = Ti.UI.createButton({
 		backgroundImage:'/ui/images/fwd.png',
 		left:60,
+		bottom:5,
 		width:25,
 		height:25,
 		enabled:false,
@@ -95,6 +101,7 @@ module.exports = function(url) {
 	var reload = Ti.UI.createButton({
 		backgroundImage:'/ui/images/reload_web.png',
 		//right:10,
+		bottom:5,
 		left:60,
 		width:25,
 		height:25
