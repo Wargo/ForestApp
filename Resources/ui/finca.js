@@ -78,7 +78,7 @@ module.exports = function(current) {
 		borderWidth:1,
 		borderRadius:10,
 		userLocation:true,
-		region:{latitude:data[current].lat, longitude:data[current].lng, latitudeDelta:0.02, longitudeDelta:0.02},
+		region:{latitude:data[current].lat, longitude:data[current].lng, latitudeDelta:data[current].zoom, longitudeDelta:data[current].zoom},
 		mapType:Ti.Map.SATELLITE_TYPE
 	});
 	
