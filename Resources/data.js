@@ -235,12 +235,12 @@ module.exports = {
 				{image:'ui/images/gallery/finca3/IMG_5981.JPG', name:'f3_13'},
 				{image:'ui/images/gallery/finca3/IMG_5991.JPG', name:'f3_14'},
 				{image:'ui/images/gallery/finca3/IMG_6010.JPG', name:'f3_15'},
-				{image:'ui/images/gallery/finca3/IMG_6012.JPG', name:'f3_16'},
-				{image:'ui/images/gallery/finca3/IMG_6039.JPG', name:'f3_17'},
+				{image:'ui/images/gallery/finca3/IMG_6012.jpg', name:'f3_16'},
+				{image:'ui/images/gallery/finca3/IMG_6039.jpg', name:'f3_17'},
 				{image:'ui/images/gallery/finca3/IMG_6047.JPG', name:'f3_18'},
 				{image:'ui/images/gallery/finca3/IMG_6059.JPG', name:'f3_19'},
 				{image:'ui/images/gallery/finca3/IMG_6082.JPG', name:'f3_20'},
-				{image:'ui/images/gallery/finca3/olivo.JPG', name:'f3_21'},
+				{image:'ui/images/gallery/finca3/olivo.jpg', name:'f3_21'},
 			],
 			hitos:[
 				{images:[
