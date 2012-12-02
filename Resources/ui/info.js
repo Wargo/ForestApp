@@ -1,6 +1,8 @@
 var Mods = require('/modules');
 var $$ = require(Mods.styles);
 
+var MyFooter = require(Mods.footer);
+
 module.exports = function() {
 	
 	var win = Ti.UI.createWindow($$.win);
@@ -30,18 +32,18 @@ module.exports = function() {
 	
 	var data = new Object();
 	
-	data.title = 'Información';
-	data.texto1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper aliquet ultrices. Duis pulvinar arcu augue. Ut eu dolor ante, sit amet auctor mi.';
-	data.texto2 = 'Suspendisse bibendum, urna at sollicitudin feugiat, risus mi dapibus nisi, eget consequat sem nisl id ante. Praesent urna neque, suscipit eu auctor nec, aliquam ut sem. Aliquam vel dapibus dui.';
-	data.texto3 = 'Suspendisse molestie bibendum urna in aliquam. Sed vulputate ipsum sed erat vulputate semper. Nunc suscipit cursus magna, a facilisis nunc condimentum quis.';
-	data.texto4 = 'Curabitur lobortis, justo ac fermentum adipiscing, lectus mauris viverra nunc, vel facilisis dolor leo ac arcu. Mauris congue euismod augue, sed congue mauris ultricies eu.';
+	data.title = 'PROYECTO ForestApp: Interpretación de la Gestión Forestal Sostenible';
+	data.texto = 'El objetivo principal del proyecto es facilitar a la sociedad el conocimiento de la realidad del medio rural para poner en valor la gestión forestal sostenible realizada en fincas particulares representativas a través de una App específica, pudiendo además descubrir unos recursos que puedan ser utilizados y animar nuevas oportunidades de emprendimiento en el ámbito rural.\r\rEs una forma de potenciar el desarrollo económico a escala local a la vez que se muestra el potencial de un sector y un territorio, integrando a los pobladores de esas zonas en la sociedad avanzada de la información y del conocimiento.\r\rSe pretende dar a conocer a cualquier usuario de iPhone la riqueza paisajística, cultural y natural de nuestros bosques fruto de la Gestión Forestal Sostenible que se ha realizado durante generaciones.\r\rEsta aplicación es una práctica herramienta que contiene información muy específica en materia forestal, cuyas funcionalidades (geolocalización de la finca, mapa de puntos de interés, guía de entorno, galería de fotos, marco jurídico y Tour virtual) nos permiten acercarnos a nuestros interesantes y desconocidos montes e interaccionar en el medio que los rodea.\r\rEste proyecto se enmarca en la Orden AAA/1401/2012 de 28 de junio, convocatoria 2012 de ayudas a la innovación tecnológica en el medio rural de la Subdirección General de Modernización de Explotaciones, de la Dirección General de Desarrollo Rural y Política Forestal del Ministerio de Agricultura, Alimentación y Medio Ambiente.';
 	
 	var title = Ti.UI.createLabel($$.textTitle);
 	title.text = data.title;
 	title.top = 10;
+	title.left = 10;
+	title.right = 10;
+	title.textAlign = 'center';
 	
 	var text = Ti.UI.createLabel($$.text);
-	text.text = data.texto1 + '\r\r' + data.texto1 + '\r\r' + data.texto2 + '\r\r' + data.texto3 + '\r\r' + data.texto4;
+	text.text = data.texto;
 	text.top = 30;
 	text.left = 20;
 	text.right = 20;

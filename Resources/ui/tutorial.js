@@ -1,6 +1,8 @@
 var Mods = require('/modules');
 var $$ = require(Mods.styles);
 
+var MyFooter = require(Mods.footer);
+
 module.exports = function() {
 	
 	var win = Ti.UI.createWindow($$.win);
@@ -30,7 +32,7 @@ module.exports = function() {
 	
 	var data = new Object();
 	
-	data.title = 'Tutorial';
+	data.title = 'Instrucciones';
 	data.texto1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper aliquet ultrices. Duis pulvinar arcu augue. Ut eu dolor ante, sit amet auctor mi.';
 	data.texto2 = 'Suspendisse bibendum, urna at sollicitudin feugiat, risus mi dapibus nisi, eget consequat sem nisl id ante. Praesent urna neque, suscipit eu auctor nec, aliquam ut sem. Aliquam vel dapibus dui.';
 	data.texto3 = 'Suspendisse molestie bibendum urna in aliquam. Sed vulputate ipsum sed erat vulputate semper. Nunc suscipit cursus magna, a facilisis nunc condimentum quis.';
