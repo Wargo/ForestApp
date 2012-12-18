@@ -5,7 +5,7 @@ reporting an issue to help us understand your environment, build settings
 and aid in debugging. Please attach this log to any issue that you report.
 ================================================================================
 
-Starting build at 12/02/12 17:05
+Starting build at 12/02/12 17:51
 
 Build details:
 
@@ -187,9 +187,9 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/hooks/prepare-commit-msg.sample                                                                                     [1239]  
   .git/hooks/update.sample                                                                                                 [3611]  
   .git/info/exclude                                                                                                        [240]   
-  .git/logs/HEAD                                                                                                           [6893]  
-  .git/logs/refs/heads/master                                                                                              [6893]  
-  .git/logs/refs/remotes/origin/master                                                                                     [6450]  
+  .git/logs/HEAD                                                                                                           [7038]  
+  .git/logs/refs/heads/master                                                                                              [7038]  
+  .git/logs/refs/remotes/origin/master                                                                                     [6600]  
   .git/objects/00/1bc2fda056e71b85084e77ae516f6d5f1285d4                                                                   [1408]  
   .git/objects/00/2d28fb6363f55a9c80706bb724659e1f17af41                                                                   [524]   
   .git/objects/00/39d61d9b4a03647a46fe6659b400440f752262                                                                   [135]   
@@ -200,6 +200,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/00/95cc0d01db8b1928d71669113290bd5f449a46                                                                   [974]   
   .git/objects/00/b3d8ea1a1a69f4f1eeed09c83927ab79eb22c1                                                                   [694]   
   .git/objects/00/d995f9b26bc5657ff42d6a8cc50f71a3083ae9                                                                   [664188]
+  .git/objects/01/137ad9fbc7fd80f1919bbfc98725d476b02d31                                                                   [58370] 
   .git/objects/01/33905ab660744305edf14fcc352085c2656a53                                                                   [2192]  
   .git/objects/01/5c979de5a65efccd453c5776eb7372cbb6a54b                                                                   [194]   
   .git/objects/01/95154aba9af22173c00e6f18a1349443338aa9                                                                   [336]   
@@ -222,6 +223,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/03/88601b65e9180bd5b822ef33a75921571fde4b                                                                   [597210]
   .git/objects/03/cfd2f1dacfa64e782fc81a2e38b3cb4fbd7915                                                                   [134]   
   .git/objects/04/02920b2011ae8012a6d652419f157130b0eaf9                                                                   [346599]
+  .git/objects/04/0ad480d2672b2cee992f7f1d6783e5ed840019                                                                   [58]    
   .git/objects/04/1eb721bf7afc99a1018028196cbc24a0971c39                                                                   [6067]  
   .git/objects/04/21e45df8ed896390dedadc8d226b0b531c729e                                                                   [63]    
   .git/objects/04/26c06364f4ba57e073636dc0abc69a23bae6cd                                                                   [602]   
@@ -332,6 +334,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/0f/9fb1afe7897d2abce0117e10b5d2912bee89e5                                                                   [1077638]
   .git/objects/0f/a3a8f4d92eea42cfa14a6da6aa0504832367d6                                                                   [523]   
   .git/objects/0f/cc006ae0cf71acf10b44a9c27fc96b25955611                                                                   [293168]
+  .git/objects/0f/cf1b2c61aae9db781b71ed5ee6e0a617819b63                                                                   [637]   
   .git/objects/10/0bfdcc3b6aaf934bcd69accf0707217328a5c6                                                                   [39967] 
   .git/objects/10/38f762585eb00de8ff86e1f700bca2eb499d35                                                                   [1032089]
   .git/objects/10/4bf60f65d14648b68823282fcb91a0e398f400                                                                   [662]   
@@ -596,6 +599,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/2a/5f542357e0fdb5e1a060f151997e2e84f7eb81                                                                   [393]   
   .git/objects/2a/652f374cf2c662c783c0ad4e70ffc0f1ec82e2                                                                   [25846] 
   .git/objects/2a/67a5622ff481d3993ea9c9a4e27785438b0034                                                                   [134]   
+  .git/objects/2a/99964cbe8c8edfea35d8283af03ed21a4010dd                                                                   [173]   
   .git/objects/2a/a0137b17b3f0d501e9517cf95e835bad145799                                                                   [400]   
   .git/objects/2a/a024b833c58fbf4cabaddd753bb355a8861e5f                                                                   [984]   
   .git/objects/2a/b7bcb22331ea2ac800aab44bdf7f425c9ea7a5                                                                   [266]   
@@ -669,6 +673,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/31/b58d16a981a5daab15ff963c6d91ae2d1874e4                                                                   [521]   
   .git/objects/31/bdfa9a982a52a8147707e6ec2f53a6ccffca7e                                                                   [131435]
   .git/objects/31/c496b00b3e4e8e1b0d6449915961b1f3213167                                                                   [423]   
+  .git/objects/31/dae95e7defe858ab964ce055c0e669a3565eed                                                                   [387]   
   .git/objects/31/e718dbdbaa50a57fd8ef42e515f919f163fb2d                                                                   [3026]  
   .git/objects/32/1011687b21c4fa38484c8aedd04afeae324ca5                                                                   [414]   
   .git/objects/32/19a8ff6c39d6b8279ea12971fbf0d2d7f6ff29                                                                   [54]    
@@ -694,6 +699,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/33/d30590e61b448133c9f735575a5c2144ae2e20                                                                   [152]   
   .git/objects/33/d5401ce9195d0b397729e7fec1535f3a96ab2c                                                                   [2765454]
   .git/objects/33/e657aba31f0d7f7c3c453ddd599c4fe494c389                                                                   [895]   
+  .git/objects/34/3a9df9c11877daa0bde7860a82faed734e76e1                                                                   [151]   
   .git/objects/34/46d7388942a191ebe3e60a8223880e6cb84338                                                                   [282]   
   .git/objects/34/586e09b94e6759dbf52875b9533ec640b7fde8                                                                   [351]   
   .git/objects/34/6fc741a90e07aedc8428477b5cd0a9139805bb                                                                   [13848] 
@@ -783,6 +789,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/3d/297efbbd26c6926b95a8decac4e20ad7c96086                                                                   [1261]  
   .git/objects/3d/2d57b405f77956f388ca72eb2eea714d01a3e5                                                                   [48]    
   .git/objects/3d/325a897417646f5edb9383d1c98dcba9838fad                                                                   [128]   
+  .git/objects/3d/3817859f366d28321c85a60eae0afa953fdf63                                                                   [54]    
   .git/objects/3d/573c2adfd94f41fdc4e350124036beebe49b1b                                                                   [152]   
   .git/objects/3d/65afd4a0166e4e85db63725937bb7a6429d710                                                                   [508]   
   .git/objects/3d/d98d1259349c0dee9287f421a6cb1fc4756fab                                                                   [141]   
@@ -1206,6 +1213,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/6a/148b8af37ca0074c35a624e1d100e482678538                                                                   [10815] 
   .git/objects/6a/20d6d2ccaa7ae3e60675040b40f59a44a42c77                                                                   [1485]  
   .git/objects/6a/2f36ba65b754471f3dd422e36f4652cee6130c                                                                   [480]   
+  .git/objects/6a/345adb20e0edd16cfb8f46fb00f97a4aa181fb                                                                   [321]   
   .git/objects/6a/45e7196915770611c798442f4a9de2c91d108e                                                                   [1954]  
   .git/objects/6a/b26b01406b21fb8b97ab2381527863a1e3a83c                                                                   [852]   
   .git/objects/6a/d945c4a187beadddf8e310ed3ed07ab8befa5b                                                                   [51998] 
@@ -1296,6 +1304,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/73/aa308e1bfc9e98350dd2e6eab3ae02f1187137                                                                   [1790]  
   .git/objects/73/af7b6342f366aba8f3e4927cd1d365ee4b9293                                                                   [2936]  
   .git/objects/73/b8e04f1345ff6f700aca443b86d02f29782bfd                                                                   [322]   
+  .git/objects/73/b9da8b2653d35182f35d5980ca8a17968c07e0                                                                   [28561] 
   .git/objects/73/bf5242d96f91575aee2bbc18467b3663eb0db1                                                                   [229]   
   .git/objects/73/c368fa59430659f21188380a080ef0bb9393f1                                                                   [134]   
   .git/objects/73/c9da3df868af72b17ef253ceb3980d5e30f8bf                                                                   [7950]  
@@ -1413,6 +1422,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/7c/21a647eb3deeed95d90bf6f3e8e47c2d7f37be                                                                   [449]   
   .git/objects/7c/29cf5a49e8efff98a436d7d5f0b296ac17ef80                                                                   [996]   
   .git/objects/7c/a62dd11e99a07536eb4745dfe9a919bfdf52e6                                                                   [621]   
+  .git/objects/7c/d234cd476a5453924f13d72367f5b56dac2365                                                                   [13850] 
   .git/objects/7c/e4952ed763f88ef7170865848ae7ab51ad147c                                                                   [370]   
   .git/objects/7c/ed897772072d092decc55e1428ae35bd82f97a                                                                   [414]   
   .git/objects/7d/00d8ba0219799d351b90bf06316715a6caf898                                                                   [58391] 
@@ -2040,6 +2050,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/bd/db36fc33313bb05456ba33893e3b28963567fe                                                                   [48]    
   .git/objects/bd/dd1dc8815ebca45751ce6340d3615834a8167e                                                                   [34310] 
   .git/objects/bd/ffb5e8e357edf7984c5623ad9a3abb68ce2ad3                                                                   [4704816]
+  .git/objects/be/0a1c5b9ceeac707637273276e8c1bb84965ba2                                                                   [403]   
   .git/objects/be/0dbcc868edd1c555f0dba4389525fe5d4ea44f                                                                   [909]   
   .git/objects/be/182cb9a06be4ca25a2bd5305d9dc7d4b01ddd0                                                                   [367]   
   .git/objects/be/3386abbd3d36c52d89d7a2802c1d27a5f3a8d9                                                                   [76]    
@@ -2280,6 +2291,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/d8/0042405f4f38d5fd3236ee2ed85232a97e792b                                                                   [451]   
   .git/objects/d8/58ddc8309a79e9f5dc3e6cb21a119d89c0d5e5                                                                   [48]    
   .git/objects/d8/6ba87d0475953224febdcfa1c5a939dffe6cd7                                                                   [64]    
+  .git/objects/d8/7e1bb8df6c67d7e0be6c64b5dbce7f9f7d3c31                                                                   [49]    
   .git/objects/d8/90633b3bcaa8e636a741acad4314c629fc4211                                                                   [12384] 
   .git/objects/d8/b80ce911590434061a2294ce09e7b141b8f032                                                                   [522]   
   .git/objects/d8/c9e17c65d8c860581a8b1505037db023630248                                                                   [1199]  
@@ -2296,6 +2308,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/d9/fd64552f53625443630a1719f6b043a8f43545                                                                   [144]   
   .git/objects/da/10a71f3750a36a2c4283a6f6ab8e0d269c7e4f                                                                   [39925] 
   .git/objects/da/15d39be40bb9dec55433099047f0a72c725cf2                                                                   [47]    
+  .git/objects/da/1717af50eac7f08044972ddd790298cafc4f03                                                                   [156298]
   .git/objects/da/2307be5799fca74efc19c7ceeb47bd3c96f990                                                                   [48]    
   .git/objects/da/2bb8d22840e24e9c46eee8e85bf01f1d0cee65                                                                   [141]   
   .git/objects/da/48991b38f1bd44f53d2692b0817c17c72ac2e0                                                                   [15229] 
@@ -2618,6 +2631,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   .git/objects/f9/f6b72bdba4923809ae5244fafc0b70993b915c                                                                   [629]   
   .git/objects/fa/5b8a4086f64a353eb1522aaa9a908bba2aa464                                                                   [1911]  
   .git/objects/fa/cc12a522bbf82153e84fc86511e1944c88dae6                                                                   [1634]  
+  .git/objects/fa/e2cf76c2e23cdb5c5587ee04ccc7be2b024b24                                                                   [239432]
   .git/objects/fa/ecc76a8f12b5fa0257b9f00d98254402cba9f6                                                                   [140]   
   .git/objects/fa/efa9b0e1b2a28c9f91c086b63960879803f50c                                                                   [803]   
   .git/objects/fb/0553cd4c35c2910483138715143ce729de75a7                                                                   [538]   
@@ -2670,18 +2684,18 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   build/iphone/main.m                                                                                                      [1522]  
   build/iphone/module.xcconfig                                                                                             [44]    
   build/iphone/project.xcconfig                                                                                            [312]   
-  build/iphone/assets/app_js                                                                                               [242]   
-  build/iphone/assets/data_js                                                                                              [46168] 
+  build/iphone/assets/app_js                                                                                               [138]   
+  build/iphone/assets/data_js                                                                                              [69990] 
   build/iphone/assets/modules_js                                                                                           [547]   
   build/iphone/assets/modules/ti_cloud_js                                                                                  [27304] 
-  build/iphone/assets/ui/finca_js                                                                                          [2502]  
+  build/iphone/assets/ui/finca_js                                                                                          [2530]  
   build/iphone/assets/ui/hito_js                                                                                           [1754]  
   build/iphone/assets/ui/home_js                                                                                           [1499]  
   build/iphone/assets/ui/homeFinca_js                                                                                      [1216]  
-  build/iphone/assets/ui/info_js                                                                                           [1689]  
+  build/iphone/assets/ui/info_js                                                                                           [2577]  
   build/iphone/assets/ui/main_js                                                                                           [2415]  
   build/iphone/assets/ui/poi_js                                                                                            [1320]  
-  build/iphone/assets/ui/tutorial_js                                                                                       [1686]  
+  build/iphone/assets/ui/tutorial_js                                                                                       [1725]  
   build/iphone/assets/ui/web_js                                                                                            [2279]  
   build/iphone/assets/ui/elements/footer_js                                                                                [272]   
   build/iphone/assets/ui/elements/minimenu_js                                                                              [2930]  
@@ -2696,7 +2710,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   build/iphone/assets/ui/views/map_js                                                                                      [1180]  
   build/iphone/assets/ui/views/marco_js                                                                                    [1806]  
   build/iphone/assets/ui/views/pois_js                                                                                     [2296]  
-  build/iphone/build/build.log                                                                                             [340157]
+  build/iphone/build/build.log                                                                                             [342005]
   build/iphone/build/Release-iphoneos/ForestApp.app/ti.cloud.js                                                            [28512] 
   build/iphone/build/Release-iphoneos/ForestApp.app/es.lproj/Localizable.strings                                           [69]    
   build/iphone/Classes/AccelerometerModule.h                                                                               [459]   
@@ -3407,7 +3421,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   Resources/ui/images/gallery/finca3/IMG_6047.JPG                                                                          [336856]
   Resources/ui/images/gallery/finca3/IMG_6059.JPG                                                                          [426799]
   Resources/ui/images/gallery/finca3/IMG_6082.JPG                                                                          [554765]
-  Resources/ui/images/gallery/finca3/olivo.jPG                                                                             [663883]
+  Resources/ui/images/gallery/finca3/olivo.jpg                                                                             [663883]
   Resources/ui/images/guia/f1_g1.jpg                                                                                       [93762] 
   Resources/ui/images/guia/f1_g2.jpg                                                                                       [34296] 
   Resources/ui/images/guia/f1_g3.jpg                                                                                       [160176]
@@ -3556,7 +3570,7 @@ File listing for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/
   Resources/ui/views/marco.js                                                                                              [2221]  
   Resources/ui/views/pois.js                                                                                               [3204]  
 ----------------------------------------------------------------------------------------------------------------------------------
-Total files: 572.0 MB
+Total files: 573.0 MB
 
 Contents of Info.plist
 
@@ -4141,7 +4155,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/gallery/finca3/IMG_6047.JPG to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/gallery/finca3/IMG_6047.JPG
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/gallery/finca3/IMG_6059.JPG to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/gallery/finca3/IMG_6059.JPG
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/gallery/finca3/IMG_6082.JPG to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/gallery/finca3/IMG_6082.JPG
-[DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/gallery/finca3/olivo.jPG to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/gallery/finca3/olivo.jPG
+[DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/gallery/finca3/olivo.jpg to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/gallery/finca3/olivo.jpg
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/guia/f1_g1.jpg to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/guia/f1_g1.jpg
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/guia/f1_g2.jpg to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/guia/f1_g2.jpg
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/images/guia/f1_g3.jpg to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/guia/f1_g3.jpg
@@ -4282,10 +4296,10 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/html/f1_mjuridico.html to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/html/f1_mjuridico.html
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/html/f2_mjuridico.html to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/html/f2_mjuridico.html
 [DEBUG] copying: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/html/f3_mjuridico.html to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/html/f3_mjuridico.html
-[DEBUG] (17:05:19) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/app.js
-[DEBUG] (17:05:19) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/data.js
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/modules.js
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/finca.js
+[DEBUG] (17:51:50) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/app.js
+[DEBUG] (17:51:50) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/data.js
+[DEBUG] (17:51:51) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/modules.js
+[DEBUG] (17:51:51) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/finca.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createView
@@ -4305,7 +4319,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: Platform.openURL
 [DEBUG] detected symbol: Platform.version
 [DEBUG] detected symbol: Platform.openURL
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/hito.js
+[DEBUG] (17:51:51) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/hito.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createButton
@@ -4318,14 +4332,14 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/home.js
+[DEBUG] (17:51:51) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/home.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createLabel
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/homeFinca.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/homeFinca.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createTableView
 [DEBUG] detected symbol: UI.iPhone.TableViewSeparatorStyle.NONE
@@ -4335,7 +4349,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createImageView
 [DEBUG] detected symbol: UI.createLabel
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/info.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/info.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createLabel
@@ -4343,7 +4357,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createLabel
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/main.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/main.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createLabel
@@ -4362,7 +4376,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: Platform.openURL
 [DEBUG] detected symbol: Platform.version
 [DEBUG] detected symbol: Platform.openURL
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/poi.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/poi.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createButton
@@ -4372,7 +4386,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: UI.createImageView
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/tutorial.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/tutorial.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createLabel
@@ -4380,7 +4394,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createLabel
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/web.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/web.js
 [DEBUG] detected symbol: Platform.displayCaps.platformHeight
 [DEBUG] detected symbol: UI.LANDSCAPE_LEFT
 [DEBUG] detected symbol: UI.LANDSCAPE_RIGHT
@@ -4397,10 +4411,10 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: Platform.openURL
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/footer.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/footer.js
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/minimenu.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/minimenu.js
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
@@ -4411,14 +4425,14 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createImageView
 [DEBUG] detected symbol: UI.createLabel
 [DEBUG] detected symbol: UI.createButton
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/sound.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/elements/sound.js
 [DEBUG] detected symbol: Media.createSound
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createProgressBar
 [DEBUG] detected symbol: UI.iPhone.ProgressBarStyle.BAR
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/amplify.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/amplify.js
 [DEBUG] detected symbol: Platform.osname
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.LANDSCAPE_LEFT
@@ -4429,11 +4443,11 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createImageView
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: Platform.osname
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/crop.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/crop.js
 [DEBUG] detected symbol: Filesystem.applicationCacheDirectory
 [DEBUG] detected symbol: Filesystem.getFile
 [DEBUG] detected symbol: App.Properties.getBool
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/gallery.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/modules/gallery.js
 [DEBUG] detected symbol: UI.LANDSCAPE_LEFT
 [DEBUG] detected symbol: UI.LANDSCAPE_RIGHT
 [DEBUG] detected symbol: UI.PORTRAIT
@@ -4442,21 +4456,21 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createImageView
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/styles/iphone.js
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/gallery.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/styles/iphone.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/gallery.js
 [DEBUG] detected symbol: UI.createTableView
 [DEBUG] detected symbol: UI.iPhone.TableViewSeparatorStyle.NONE
 [DEBUG] detected symbol: UI.createTableViewRow
 [DEBUG] detected symbol: UI.iPhone.TableViewCellSelectionStyle.NONE
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: UI.createImageView
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/guia.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/guia.js
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createScrollableView
 [DEBUG] detected symbol: UI.createActivityIndicator
 [DEBUG] detected symbol: UI.createImageView
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/map.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/map.js
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createImageView
@@ -4464,7 +4478,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.iPhone.SystemButtonStyle.BAR
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/map2.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/map2.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createButton
@@ -4475,7 +4489,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.iPhone.SystemButtonStyle.BAR
 [DEBUG] detected symbol: UI.createScrollView
 [DEBUG] detected symbol: UI.createLabel
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/marco.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/marco.js
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createWebView
 [DEBUG] detected symbol: UI.createActivityIndicator
@@ -4485,7 +4499,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: Platform.openURL
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/pois.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/Resources/ui/views/pois.js
 [DEBUG] detected symbol: UI.createWindow
 [DEBUG] detected symbol: UI.createView
 [DEBUG] detected symbol: UI.createButton
@@ -4501,7 +4515,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: Map.ANNOTATION_RED
 [DEBUG] detected symbol: Map.createAnnotation
 [DEBUG] detected symbol: UI.createImageView
-[DEBUG] (17:05:20) compiling: /Users/albertsorianogarcia/Library/Application Support/Titanium/modules/commonjs/ti.cloud/2.3.0/ti.cloud.js
+[DEBUG] (17:51:52) compiling: /Users/albertsorianogarcia/Library/Application Support/Titanium/modules/commonjs/ti.cloud/2.3.0/ti.cloud.js
 [DEBUG] detected symbol: API.info
 [DEBUG] detected symbol: API.error
 [DEBUG] detected symbol: API.info
@@ -4529,8 +4543,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] detected symbol: Platform.osname
 [DEBUG] detected symbol: UI.createButton
 [DEBUG] detected symbol: Platform.osname
-[DEBUG] (17:05:21) packaging javascript
-[DEBUG] (17:05:21) packaging finished
+[DEBUG] (17:51:53) packaging javascript
+[DEBUG] (17:51:53) packaging finished
 [DEBUG] module image = /Users/albertsorianogarcia/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/modules/ui/images
 [DEBUG] copy resources from /Users/albertsorianogarcia/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/modules/ui/images to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/modules/ui/images
 [DEBUG] copying: /Users/albertsorianogarcia/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/iphone/modules/ui/images/badge.png to /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/modules/ui/images/badge.png
@@ -4594,7 +4608,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/appicon@2x-pngcrush.png
 [DEBUG] (51.95% IDAT increase)
 [DEBUG] (51.54% filesize increase)
-[DEBUG] CPU time used = 0.012 seconds (decoding 0.002,
+[DEBUG] CPU time used = 0.013 seconds (decoding 0.002,
 [DEBUG] encoding 0.003, other 0.008 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/appicon@2x.png
 [DEBUG] | pngcrush 1.6.4
@@ -4618,8 +4632,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-568h@2x-pngcrush.png
 [DEBUG] (54.37% IDAT increase)
 [DEBUG] (54.14% filesize increase)
-[DEBUG] CPU time used = 0.993 seconds (decoding 0.068,
-[DEBUG] encoding 0.839, other 0.085 seconds)
+[DEBUG] CPU time used = 1.000 seconds (decoding 0.069,
+[DEBUG] encoding 0.842, other 0.089 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-568h@2x.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4643,8 +4657,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-Landscape-pngcrush.png
 [DEBUG] (5.22% IDAT increase)
 [DEBUG] (5.23% filesize increase)
-[DEBUG] CPU time used = 5.155 seconds (decoding 0.050,
-[DEBUG] encoding 5.061, other 0.044 seconds)
+[DEBUG] CPU time used = 5.197 seconds (decoding 0.054,
+[DEBUG] encoding 5.095, other 0.048 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-Landscape.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4668,8 +4682,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-Portrait-pngcrush.png
 [DEBUG] (5.36% IDAT increase)
 [DEBUG] (5.37% filesize increase)
-[DEBUG] CPU time used = 4.774 seconds (decoding 0.053,
-[DEBUG] encoding 4.676, other 0.046 seconds)
+[DEBUG] CPU time used = 4.812 seconds (decoding 0.058,
+[DEBUG] encoding 4.704, other 0.050 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-Portrait.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4692,8 +4706,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default-pngcrush.png
 [DEBUG] (60.56% IDAT increase)
 [DEBUG] (60.31% filesize increase)
-[DEBUG] CPU time used = 0.240 seconds (decoding 0.020,
-[DEBUG] encoding 0.193, other 0.027 seconds)
+[DEBUG] CPU time used = 0.241 seconds (decoding 0.020,
+[DEBUG] encoding 0.194, other 0.027 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4716,8 +4730,8 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default@2x-pngcrush.png
 [DEBUG] (53.80% IDAT increase)
 [DEBUG] (53.57% filesize increase)
-[DEBUG] CPU time used = 0.856 seconds (decoding 0.064,
-[DEBUG] encoding 0.717, other 0.074 seconds)
+[DEBUG] CPU time used = 0.860 seconds (decoding 0.064,
+[DEBUG] encoding 0.716, other 0.080 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/Default@2x.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4790,7 +4804,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] (32.98% IDAT increase)
 [DEBUG] (33.90% filesize increase)
 [DEBUG] CPU time used = 0.029 seconds (decoding 0.004,
-[DEBUG] encoding 0.016, other 0.009 seconds)
+[DEBUG] encoding 0.016, other 0.010 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/modules/ui/images/photoDefault.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -4937,7 +4951,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/fwd-pngcrush.png
 [DEBUG] (0.99% IDAT reduction)
 [DEBUG] (19.40% filesize increase)
-[DEBUG] CPU time used = 0.005 seconds (decoding 0.000,
+[DEBUG] CPU time used = 0.006 seconds (decoding 0.001,
 [DEBUG] encoding 0.003, other 0.002 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/fwd.png
 [DEBUG] | pngcrush 1.6.4
@@ -4986,7 +5000,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] (23.64% IDAT reduction)
 [DEBUG] (7.69% filesize reduction)
 [DEBUG] CPU time used = 0.002 seconds (decoding 0.000,
-[DEBUG] encoding 0.001, other 0.001 seconds)
+[DEBUG] encoding 0.001, other 0.002 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/out.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -5009,7 +5023,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/reload_web-pngcrush.png
 [DEBUG] (2.71% IDAT reduction)
 [DEBUG] (10.25% filesize increase)
-[DEBUG] CPU time used = 0.006 seconds (decoding 0.001,
+[DEBUG] CPU time used = 0.007 seconds (decoding 0.001,
 [DEBUG] encoding 0.004, other 0.002 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/reload_web.png
 [DEBUG] | pngcrush 1.6.4
@@ -5329,7 +5343,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] Best pngcrush method = 120 (fm 0 zl 9 zs 1) for /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/menu/inicio_aplicacion-pngcrush.png
 [DEBUG] (8.00% IDAT increase)
 [DEBUG] (11.09% filesize increase)
-[DEBUG] CPU time used = 0.011 seconds (decoding 0.001,
+[DEBUG] CPU time used = 0.010 seconds (decoding 0.001,
 [DEBUG] encoding 0.004, other 0.006 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/menu/inicio_aplicacion.png
 [DEBUG] | pngcrush 1.6.4
@@ -5354,7 +5368,7 @@ PhaseScriptExecution Pre-Compile build/ForestApp.build/Release-iphoneos/ForestAp
 [DEBUG] (6.40% IDAT increase)
 [DEBUG] (8.82% filesize increase)
 [DEBUG] CPU time used = 0.009 seconds (decoding 0.001,
-[DEBUG] encoding 0.002, other 0.007 seconds)
+[DEBUG] encoding 0.002, other 0.006 seconds)
 [DEBUG] iphoneos-optimize: Optimized PNG: /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ui/images/menu/inicio_tour.png
 [DEBUG] | pngcrush 1.6.4
 [DEBUG] |    Copyright (C) 1998-2002,2006 Glenn Randers-Pehrson
@@ -5592,12 +5606,6 @@ CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/a
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch armv7 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-aywzbbxlabvqusgrubqppguebfms/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/Base64Transcoder.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/Base64Transcoder.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/Base64Transcoder.c" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/Base64Transcoder.o"
 
-CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.o Classes/KrollBridge.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-    cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wno-c++11-extensions -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-ggvdpphvmcatcmhitbuyzmlrhfhi/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/KrollBridge.mm" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.o"
-
 CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/TiUITableViewAction.o Classes/TiUITableViewAction.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
     setenv LANG en_US.US-ASCII
@@ -5754,6 +5762,12 @@ CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/a
     setenv LANG en_US.US-ASCII
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch armv7 -fmessage-length=0 -std=c99 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-bcrcqkwoavllakgxblfhdnfvkwna/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/SBJSON-D3E5F9E305C04645.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/SBJSON-D3E5F9E305C04645.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/SBJSON.m" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/SBJSON-D3E5F9E305C04645.o"
+
+CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.o Classes/KrollBridge.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wno-c++11-extensions -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-ggvdpphvmcatcmhitbuyzmlrhfhi/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/KrollBridge.mm" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollBridge.o"
 
 CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/KrollCallback.o Classes/KrollCallback.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
@@ -6636,6 +6650,12 @@ In file included from /Users/albertsorianogarcia/Documents/Titanium Studio Works
                      ^
 9 warnings generated.
 
+CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.o Classes/AQRecorder.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
+    cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
+    setenv LANG en_US.US-ASCII
+    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wno-c++11-extensions -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-ggvdpphvmcatcmhitbuyzmlrhfhi/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/AQRecorder.mm" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.o"
+
 CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/CADebugMacros.o Classes/CADebugMacros.cpp normal armv7 c++ com.apple.compilers.llvm.clang.1_0.compiler
     cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
     setenv LANG en_US.US-ASCII
@@ -6653,12 +6673,6 @@ CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/a
     setenv LANG en_US.US-ASCII
     setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-c++11-extensions -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-cdlnnuxolqxpdkhcaebzvbezpahf/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/CAXException.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/CAXException.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/CAXException.cpp" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/CAXException.o"
-
-CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.o Classes/AQRecorder.mm normal armv7 objective-c++ com.apple.compilers.llvm.clang.1_0.compiler
-    cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
-    setenv LANG en_US.US-ASCII
-    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ -arch armv7 -fmessage-length=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wformat -Wno-missing-braces -Wno-parentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wno-unused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-shorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-arc-abi -Wno-c++11-extensions -DDEPLOYTYPE=production -DTI_PRODUCTION=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fvisibility=hidden -fvisibility-inlines-hidden -Wno-sign-conversion "-DIBOutlet=__attribute__((iboutlet))" "-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))" "-DIBAction=void)__attribute__((ibaction)" -miphoneos-version-min=4.3 -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-generated-files.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-own-target-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-all-target-headers.hmap" -iquote "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/ForestApp-project-headers.hmap" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/include" -I/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS6.0.sdk/usr/include/libxml2 -Iheaders "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources/armv7" "-I/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/DerivedSources" "-F/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos" -DTI_POST_1_2 -include /var/folders/bt/v65vv3j907s7rb_gwby_nvq80000gn/C/com.apple.Xcode.501/SharedPrecompiledHeaders/ForestApp_Prefix-ggvdpphvmcatcmhitbuyzmlrhfhi/ForestApp_Prefix.pch -MMD -MT dependencies -MF "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.d" --serialize-diagnostics "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.dia" -c "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/Classes/AQRecorder.mm" -o "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/AQRecorder.o"
 
 CompileC build/ForestApp.build/Release-iphoneos/ForestApp.build/Objects-normal/armv7/SCListener.o Classes/SCListener.m normal armv7 objective-c com.apple.compilers.llvm.clang.1_0.compiler
     cd "/Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone"
@@ -7790,9 +7804,9 @@ Touch build/Release-iphoneos/ForestApp.app.dSYM
 
 + Looking for application binary at /Users/albertsorianogarcia/Documents/Titanium Studio Workspace/ForestApp/build/iphone/build/Release-iphoneos/ForestApp.app/ForestApp
 Creating distribution for xcode4...
-Writing archive plist to: /Users/albertsorianogarcia/Library/Developer/Xcode/Archives/2012-12-02/ForestApp_17-06-55.xcarchive/Info.plist
+Writing archive plist to: /Users/albertsorianogarcia/Library/Developer/Xcode/Archives/2012-12-02/ForestApp_17-53-26.xcarchive/Info.plist
 
-{'ArchiveVersion': 1.0, 'CreationDate': datetime.datetime(2012, 12, 2, 16, 6, 57, 747622), 'ApplicationProperties': {'ApplicationPath': u'Applications/ForestApp.app', 'CFBundleIdentifier': 'net.artvisual.forestapp', 'CFBundleShortVersionString': '1.0', 'IconPaths': [u'Applications/ForestApp.app/appicon.png', u'Applications/ForestApp.app/appicon.png']}, 'Name': u'ForestApp', 'SchemeName': u'ForestApp'}
+{'ArchiveVersion': 1.0, 'CreationDate': datetime.datetime(2012, 12, 2, 16, 53, 28, 342460), 'ApplicationProperties': {'ApplicationPath': u'Applications/ForestApp.app', 'CFBundleIdentifier': 'net.artvisual.forestapp', 'CFBundleShortVersionString': '1.0', 'IconPaths': [u'Applications/ForestApp.app/appicon.png', u'Applications/ForestApp.app/appicon.png']}, 'Name': u'ForestApp', 'SchemeName': u'ForestApp'}
 
 Launching xcode: /Applications/Xcode.app
 Finishing build
