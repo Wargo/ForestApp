@@ -48,7 +48,7 @@ module.exports = function(current) {
 	
 	map = Ti.Map.createView({
 		//top:45 + 60,
-		top:10,
+		top:60,
 		//bottom:19 + 10,
 		bottom:10,
 		left:10,

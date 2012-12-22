@@ -33,22 +33,25 @@ module.exports = function() {
 	var data = new Object();
 	
 	data.title = 'Instrucciones';
-	data.texto1 = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ullamcorper aliquet ultrices. Duis pulvinar arcu augue. Ut eu dolor ante, sit amet auctor mi.';
-	data.texto2 = 'Suspendisse bibendum, urna at sollicitudin feugiat, risus mi dapibus nisi, eget consequat sem nisl id ante. Praesent urna neque, suscipit eu auctor nec, aliquam ut sem. Aliquam vel dapibus dui.';
-	data.texto3 = 'Suspendisse molestie bibendum urna in aliquam. Sed vulputate ipsum sed erat vulputate semper. Nunc suscipit cursus magna, a facilisis nunc condimentum quis.';
-	data.texto4 = 'Curabitur lobortis, justo ac fermentum adipiscing, lectus mauris viverra nunc, vel facilisis dolor leo ac arcu. Mauris congue euismod augue, sed congue mauris ultricies eu.';
+	data.texto = '1) El icono con la flecha dirección a la izquierda le llevará directamente a la pantalla anterior.\r\r2) El icono de la casa, le llevará de nuevo a la ventana inicial de la finca seleccionada.\r\r3) El icono de la chincheta, le llevará al mapa estático de la finca donde podrá encontrar los puntos de interés de la finca seleccionada. Pulsando sobre el botón “Ver POIs” dentro de esta sección accederá al mapa interactivo donde podrá navegar entre los distintos POIs y acceder a la información asociada a cada uno de ellos.\r\r4) El icono del monumento le llevará a la sección de “Guía de Entorno” donde podrá encontrar información de la zona donde se ubica la finca: Costumbres, gastronomía, etc…\r\r5) El icono de la fotografía le llevará a la “Galería Fotográfica” de la finca en la que se encuentre. Cada finca cuenta con su propia galería. Usted podrá ampliar las distintas miniaturas simplemente pulsándolas.\r\r6) El icono del martillo le llevará a la sección “Marco Jurídico”, donde encontrará información legal asociada a la comunidad autónoma donde se encuentra albergada la finca.\r\r7) Pulsando sobre el icono “Tour” accederá al tour virtual de la finca, donde podrá acceder al mapa interactivo de los distintos hitos que componen la ruta, así como a su información y audios.';
 	
 	var title = Ti.UI.createLabel($$.textTitle);
 	title.text = data.title;
 	title.top = 10;
 	
 	var text = Ti.UI.createLabel($$.text);
-	text.text = data.texto1 + '\r\r' + data.texto1 + '\r\r' + data.texto2 + '\r\r' + data.texto3 + '\r\r' + data.texto4;
+	text.text = data.texto;
 	text.top = 30;
 	text.left = 20;
 	text.right = 20;
 	
 	view.add(title);
+	view.add(Ti.UI.createImageView({
+		image:'ui/images/botones.jpg',
+		width:300,
+		height:55.31,
+		top:30
+	}));
 	view.add(text);
 	
 	win.add(view);
