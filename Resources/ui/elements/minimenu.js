@@ -18,7 +18,7 @@ module.exports = function(win, current) {
 	var marcoView = new MyMarco(current);
 	win.add(marcoView);
 	var mapView = new MyPOIS(current);
-	win.add(mapView);
+	//win.add(mapView);
 	var staticMapView = new MyMap(current);
 	win.add(staticMapView);
 	

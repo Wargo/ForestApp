@@ -111,7 +111,6 @@ module.exports = function() {
 					Ti.Platform.openURL('Maps://http://maps.google.com/maps?daddr=' + e.annotation.latitude + ',' + e.annotation.longitude);
 				}
 			} else if (e.clicksource == 'title' || e.clicksource == 'subtitle') {
-				//new MyPOIS(e.source._i).open({left:0});
 				new MyHomeFinca(e.source._i).open({left:0});
 			} else if (e.clicksource == 'pin') {
 			}
