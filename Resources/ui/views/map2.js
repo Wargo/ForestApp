@@ -6,6 +6,7 @@ var data = MyData.bbdd;
 var MyAmplify = require(Mods.amplify);
 var MyFinca = require(Mods.finca);
 var MyWeb = require(Mods.web);
+var MyFooter = require(Mods.footer);
 
 module.exports = function(current) {
 	
@@ -18,6 +19,9 @@ module.exports = function(current) {
 		height:45
 	});
 	win.add(header);
+	
+	var footer = MyFooter();
+	win.add(footer);
 	
 	var back = Ti.UI.createButton($$.menuButton);
 	back.image = 'ui/images/menu/inicio_aplicacion.png';
@@ -78,6 +82,7 @@ module.exports = function(current) {
 	textView.contentHeight = 'auto';
 	textView.showVerticalScrollIndicator = true;
 	textView.top = 10;
+	textView.bottom = 10;
 	
 	var text = Ti.UI.createLabel($$.text);
 	text.top = text.left = text.right = 20;
